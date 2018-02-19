@@ -1,9 +1,10 @@
 # Homework
 
-    $ CIS /Discussion 5 - High to machine level | 0
-    $ CIS /Assignment 5 - Programming
-    $ CIS /Quiz 5 - Programming
     $ Engl/The Circle: 273-308
+    U CIS /Discussion 6 - IDE | 3
+    U CIS /Assignment 6 - Your IDE and First Programs
+    U CIS /Quiz 6 - Your IDE and First Programs
 # To Do
 
     * dTech Credit Transfer Form
+    * Vim global clipboard
