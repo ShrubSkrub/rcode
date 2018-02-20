@@ -8,3 +8,5 @@
 
     * dTech Credit Transfer Form
     * Vim global clipboard
+    * Get new statusbar
+    * Find a better wallpaper
