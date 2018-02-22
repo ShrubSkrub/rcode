@@ -1,7 +1,5 @@
 # Homework
 
-    ! Math/Reflection
-    ! WorH/Participation survey
     H Chem/CC 4 Analysis & video
     F Engl/Circle: 309-326 | Annotations
     U CIS /Discussion 6 - IDE | 3
@@ -14,7 +12,6 @@
 
 # To Do
 
-    * Email CIS IDE Question
     * Ask about grades
     * Library Card
     * Healthy Choices Transportation Waiver
@@ -22,4 +19,6 @@
 
     * Get new statusbar
         * Notification driven? (PIA)
-    * IDE, Code Blocks?
+
+# Teeny Notes
+98.234.152.139
