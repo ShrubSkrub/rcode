@@ -1,8 +1,8 @@
 # Homework
 
-    H Chem/CC 4 Analysis & video
     F Engl/Circle: 309-326 | Annotations
-    U CIS /Discussion 6 - IDE | 3
+    F Chem/CC 4 Analysis
+    > U CIS /Discussion 6 - IDE | 0
     U CIS /Assignment 6 - Your IDE and First Programs
     U CIS /Quiz 6 - Your IDE and First Programs
 
@@ -12,13 +12,11 @@
 
 # To Do
 
-    * Ask about grades
+    > * **ASK ABOUT GRADES**
+    * Freedom Yewno iStudy
     * Library Card
     * Healthy Choices Transportation Waiver
         https://drive.google.com/file/d/1-wejiD4XbUqELy7JFbJOvu4EvJ4g-Txf/view
 
     * Get new statusbar
         * Notification driven? (PIA)
-
-# Teeny Notes
-98.234.152.139
