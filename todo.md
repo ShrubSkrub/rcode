@@ -1,18 +1,18 @@
 # Homework
 
-    F Engl/Circle: 309-326 | Annotations
-    F Chem/CC 4 Analysis
     > U CIS /Discussion 6 - IDE | 0
     U CIS /Assignment 6 - Your IDE and First Programs
     U CIS /Quiz 6 - Your IDE and First Programs
 
+    M Engl/Circle: 326-346 | Annotations
+
     H Mar1/Math/PT1 Polynomial rollercoaster
-    H Mar1/Math/Activity Log Laws (Problem Set)
-        https://classroom.google.com/u/0/c/NzU1ODg1OTY1N1pa/a/MTE2MDc5MzA4Mzla/details
+    > H Mar1/Math/Activity Log Laws (Problem Set)
 
 # To Do
 
     > * **ASK ABOUT GRADES**
+    * 9/11 paper
     * Freedom Yewno iStudy
     * Library Card
     * Healthy Choices Transportation Waiver
