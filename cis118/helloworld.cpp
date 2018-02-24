@@ -4,6 +4,7 @@
 using namespace std; //Command to avoid typing std:: in front of cout and endl commands
 int main( )          //All programs start at main simple version of main, others possible
 {
+    cout << "Sean Duarte - 2/24/18" << endl; // Name and date to show this is my code
     cout << "Hello World"<< endl << endl; // cout command to print message to monitor
     // system ("Pause");    // Command needed to pause and see output on PC¦ remove this line on Mac
     return 0;            // End program
