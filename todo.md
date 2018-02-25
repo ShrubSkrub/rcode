@@ -1,13 +1,15 @@
 # Homework
 
     > U CIS /Discussion 6 - IDE | 0
-    U CIS /Assignment 6 - Your IDE and First Programs
-    U CIS /Quiz 6 - Your IDE and First Programs
+    > U CIS /Assignment 6 - Your IDE and First Programs
+    > U CIS /Quiz 6 - Your IDE and First Programs
 
     M Engl/Circle: 326-346 | Annotations
-
-    H Mar1/Math/PT1 Polynomial rollercoaster
-    > H Mar1/Math/Activity Log Laws (Problem Set)
+    H Math/PT1 Polynomial rollercoaster
+    > H Math/Activity Log Laws (Problem Set)
+    U CIS /Discussion 6 - IDE | 0
+    U CIS /Assignment 6 - Your IDE and First Programs
+    U CIS /Quiz 6 - Your IDE and First Programs
 
 # To Do
 
