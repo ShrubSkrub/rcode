@@ -1,19 +1,15 @@
 # Homework
 
-    > U CIS /Discussion 6 - IDE | 0
-    > U CIS /Assignment 6 - Your IDE and First Programs
-    > U CIS /Quiz 6 - Your IDE and First Programs
-
-    M Engl/Circle: 326-346 | Annotations
+    W Engl/Circle: 346-385 | Annotations
     H Math/PT1 Polynomial rollercoaster
     > H Math/Activity Log Laws (Problem Set)
-    U CIS /Discussion 6 - IDE | 0
-    U CIS /Assignment 6 - Your IDE and First Programs
-    U CIS /Quiz 6 - Your IDE and First Programs
+    F Chem/PT Video
+    U CIS /Discussion 7
+    U CIS /Assignment 7
+    U CIS /Quiz 7
 
 # To Do
 
-    > * **ASK ABOUT GRADES**
     * 9/11 paper
     * Freedom Yewno iStudy
     * Library Card
