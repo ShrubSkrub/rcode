@@ -9,11 +9,13 @@ int main() {
 
     cout << "(18 + 6) / 3 = ";
     cout << (a + b) / c << endl;
-    cout << "Follows PEMDAS, does parenthesis addition, then divides." << endl << endl;
+    cout << "Follows PEMDAS, does parenthesis addition, then divides." << endl
+         << endl;
 
     cout << "18 + (6 / 3) = ";
     cout << a + (b / c) << endl;
-    cout << "Follows PEMDAS, does parenthesis division, then adds." << endl << endl;
+    cout << "Follows PEMDAS, does parenthesis division, then adds." << endl
+         << endl;
 
-    return 0; // End program
+    return 0;  // End program
 }

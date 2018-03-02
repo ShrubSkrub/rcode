@@ -1,0 +1,44 @@
+1) What are #include libraries ?
+
+2) What commands are found in the #include <iostream> library that we will use ?
+
+3) What is syntax?
+
+4) What does the computer do when it encounters a statement that declares a variable ?
+
+5) What are the byte sizes for int, double and char data types ?
+
+6) Why is an int variable only able to store a range of values from approx - 2.1 billion to +2.1 billion?
+
+7) What is PEMDAS ?  How is it also important when doing math in a computer program?
+
+8) Is the \u2018=\u2019 sign the same for math and programming ? Explain your answer.
+
+9) What happens when you Assign a value to a variable? How does it work?
+
+10) What is variable Initialization, why is it necessary in C++?
+
+11) Have you looked at the syntax of the declaration and assignment statements ?
+
+    a.  Is the order of their syntax fixed..?  Give examples.
+
+    b.  Would the statements still work if you switch of order of the parts in the statements?
+
+12) Why use comments // ?
+
+13) Code Reuse, Why reuse code ?
+
+14) What is the hardware that is behind a variable ?
+
+15) Why use variable naming conventions ? .. what would happen if you did not use them ?
+
+16) How many "key words" will you be learning in this class?
+
+17) When should you use the >> and << symbols ?
+
+18) What part of the OS helps you declare variables ?
+
+19) What is Camel case and why use it?
+
+20) List the statement types have you use so far
+
