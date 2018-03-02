@@ -1,27 +1,25 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     double n1, n2, output;
     char op;
 
     cout << "Input operation: ";
     cin >> n1 >> op >> n2;
 
-    switch (op)
-    {
+    switch (op) {
         case '+':
-            output = n1+n2;
+            output = n1 + n2;
             break;
         case '-':
-            output = n1-n2;
+            output = n1 - n2;
             break;
         case '*':
-            output = n1*n2;
+            output = n1 * n2;
             break;
         case '/':
-            output = n1/n2;
+            output = n1 / n2;
             break;
         default:
             cout << "Error: Incorrect operator.";
