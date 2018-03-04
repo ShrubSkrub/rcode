@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 int main() {
+    cout << "~ Sean Duarte - 3/04/18 ~" << endl;  // Name and date
+
     double a = 18, b = 6, c = 3;
 
     cout << "18 + 6 / 3 = ";
