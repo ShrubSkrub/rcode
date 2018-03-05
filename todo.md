@@ -1,11 +1,15 @@
 # Homework
 
-    U CIS /Discussion 7 | 2
-    U CIS /Assignment 7
-    U CIS /Quiz 7
+    ! Engl/CC 4.7
 
-    > M Engl/Circle: 386-431 | Annotations
     T Chem/PT 4.1 Story
+    F Math/Problem set
+        4-128, 129, 129, 130, 131, 132, 134, 135, 136
+    F Math/UE 4
+    F Engl/Circle: Finish Book | Annotations
+    U CIS /Discussion 8 | 3
+    U CIS /Assignment 8
+    U CIS /Quiz 8
 
 # To Do
 
@@ -16,3 +20,5 @@
     * Make kill script
     * Hacker One Class
     * Add menu key to .Xmodmap
+    * Notification system
+    * w3m use feh instead of imagemagick
