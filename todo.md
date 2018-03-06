@@ -1,12 +1,10 @@
 # Homework
 
-    ! Engl/CC 4.7
-
-    T Chem/PT 4.1 Story
+    W Engl/Trump Speech | Work on
     F Math/Problem set
-        4-128, 129, 129, 130, 131, 132, 134, 135, 136
+        4-128, 129, 130, 131, 132, 134, 135, 136
     F Math/UE 4
-    F Engl/Circle: Finish Book | Annotations
+    > F Engl/Circle: 431 - Finish Book | Annotations
     U CIS /Discussion 8 | 3
     U CIS /Assignment 8
     U CIS /Quiz 8
