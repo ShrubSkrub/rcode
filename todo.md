@@ -1,12 +1,12 @@
 # Homework
 
-    W Engl/Trump Speech | Work on
     F Math/Problem set
         4-128, 129, 130, 131, 132, 134, 135, 136
     F Math/UE 4
     > F Engl/Circle: 431 - Finish Book | Annotations
     U CIS /Discussion 8 | 3
     U CIS /Assignment 8
+        * $1, 2, $3, $4, $5, Q
     U CIS /Quiz 8
 
 # To Do
@@ -20,3 +20,4 @@
     * Add menu key to .Xmodmap
     * Notification system
     * w3m use feh instead of imagemagick
+    * Port Fezian Time to Classic
