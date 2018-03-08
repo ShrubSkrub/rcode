@@ -1,12 +1,12 @@
 # Homework
 
-    F Math/Problem set
+    > F Math/Problem set
         4-128, 129, 130, 131, 132, 134, 135, 136
     F Math/UE 4
     > F Engl/Circle: 431 - Finish Book | Annotations
-    U CIS /Discussion 8 | 3
+    U CIS /Discussion 8 | 2
     U CIS /Assignment 8
-        * $1, 2, $3, $4, $5, Q
+        * $1, $2, $3, $4, $5, Q
     U CIS /Quiz 8
 
 # To Do
