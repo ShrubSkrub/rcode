@@ -13,11 +13,13 @@ int main() {
         cin >> tempIn;
         tempOut = (tempIn * 1.8) + 32;
         cout << tempOut << "°F" << endl;
-    } else {
+    } else if (choice == 2) {
         cout << "Input Farenheit temperature: ";
         cin >> tempIn;
         tempOut = (tempIn - 32) / 1.8;
         cout << tempOut << "°C" << endl;
+    } else {
+        cout << "Not valid option.";
     }
 
     return 0;  // End program
