@@ -1,0 +1,37 @@
+1) What are the characteristics of Alternative Sequences?
+An alternative sequence is a sequence of code that is different from another sequence, and you can choose to do it.
+2) Why do you need alternative sequences in a program?
+You need alternative sequences in a program because otherwise programs wouldn't be able to adapt or change.  Programs would be static, and nowhere near as useful.
+3) Explain what are criteria?
+Criteria are ways to make a decision.  Criteria let you make choices so that you are not static and unchanging.
+4) How clear are you on what criteria you use in making choices in your everyday life?
+I use a lot of criteria when making choices in my everyday life.  I factor in how hungry I am when getting lunch, or I factor in how much work I have when deciding when to start working.
+5) Do you think it is absolutely necessary to be perfectly clear on the conditions you write in computer programs?  Why or why not?
+It is absolutely necessary to be perfectly clear on the condition I must write in computer programs.  This is because a program is not good if it does not fulfill it's purpose.
+6) You will notice that a block of code is indicated with a set of parentheses  { code }.  What does it mean to have a nested if statement inside an if statement? Give an example.
+If an if statement is inside an if statement, it means that the inner if statement will only be run if the outer if statement's conditions are met.  An example would be this:
+if (x == 2) {
+	if (y == 3) {
+		cout << "x = 2 and y = 3";
+	}
+	cout << "x = 2 but y does not equal 3";
+}
+This code snippet will only say "x = 2 and y = 3" if x=2 and y=3.  If x does not equal 2, the inner if statement will not even be run.
+7) Do you think most programs have a lot of Alternative sequences, if not.. why not.. if so, why so.
+Most programs have a lot of alternative sequences.  This is because most programs do many things, not a single thing that does not take criteria.
+8) What is the purpose/advantage/benefit of Flow Charting?
+The purpose of flow charting is to visually show and map out the path a program can/will take.
+9) What are the 6 relational operators?
+The six relational operators are >, <, >=, <=, ==, and !=.
+10) How is the equal sign in C++ different then in a math class?
+The equal sign in C++ is different than in a math class because it assigns values in C++.  The C++ "==" is the same as math's "=".
+11) What is the purpose of comments?
+The purpose of comments is to make it easier for you or someone else to read your code.
+12) What did Bill Gates say about IF statements?
+
+13) What is Single Selection?
+Single selection is an if statement.
+14) What is Double Selection?
+Double selection is an if else statement.
+15) Integrated studies:  Computer Science Alternative Sequences (Branching, Selection, Decision) and Individual Liberty.  Each person has a "volitional conceptual facility" which they can use to create and set 'criteria' select 'alternative sequences'.  Using their mind, each person can best choose the 'productive paths' of life.  Is that volitional choice, the basis/foundation, the link for the next level concept of Individual Liberty, freedom?
+No, that is not volitional choice.  Our brain and it's neurons can be thought of as a large computer.  Our selves are the program that is always running on our "computer."  As a result, we don't have "volitional" choice; We make choices based upon criteria.
