@@ -10,7 +10,7 @@ int main() {
     cout << "What is your age? ";
     cin >> age;
 
-    if (age <= 18) {
+    if (age >= 18) {
         cout << firstName << ", you are an adult.";
     } else {
         cout << firstName << ", you are not an adult";
