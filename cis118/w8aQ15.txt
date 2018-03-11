@@ -28,7 +28,7 @@ The equal sign in C++ is different than in a math class because it assigns value
 11) What is the purpose of comments?
 The purpose of comments is to make it easier for you or someone else to read your code.
 12) What did Bill Gates say about IF statements?
-
+Bill Gates said that if statements are fundamental to computer science, and that most programs utilize many if statements.
 13) What is Single Selection?
 Single selection is an if statement.
 14) What is Double Selection?
