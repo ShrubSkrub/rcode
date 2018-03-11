@@ -2,9 +2,8 @@
 
     U Engl/Thesis
     U CIS /Discussion 8 | 1
-    U CIS /Assignment 8
-        * $1, $2, $3, $4, $5, ~Q
-    U CIS /Quiz 8
+    > U CIS /Assignment 8
+    > U CIS /Quiz 8
 
 # To Do
 
