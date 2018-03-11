@@ -19,21 +19,21 @@ int main() {
                     cout << "Do you have transportation? [1] yes, [2] no: ";
                     cin >> haveTransportation;
                     if (haveTransportation == 1) {
-                        cout << "You can have lunch at McDonalds.";
+                        cout << "You can have lunch at McDonalds." << endl;
                     } else {
-                        cout << "You can't get to the restaurant, so you can't get food.";
+                        cout << "You can't get to the restaurant, so you can't get food." << endl;
                     }
                 } else {
-                    cout << "You can't get food if the restaurant is closed.";
+                    cout << "You can't get food if the restaurant is closed." << endl;
                 }
             } else {
-                cout << "You shouldn't get food because you are not hungry.";
+                cout << "You shouldn't get food because you are not hungry." << endl;
             }
         } else {
-            cout << "You don't have time to get food.";
+            cout << "You don't have time to get food." << endl;
         }
     } else {
-        cout << "You don't have money to buy food with.";
+        cout << "You don't have money to buy food with." << endl;
     }
 
     return 0;  // End program

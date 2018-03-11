@@ -8,19 +8,19 @@ int main() {
     cin >> grade;
 
     if (grade <= 60) {
-        cout << "F";
+        cout << "F" << endl;
     } else {
         if (grade <= 69) {
-            cout << "D";
+            cout << "D" << endl;
         } else {
             if (grade <= 79) {
-                cout << "C";
+                cout << "C" << endl;
             } else {
                 if (grade <= 89) {
-                    cout << "B";
+                    cout << "B" << endl;
                 } else {
                     if (grade >= 90) {
-                        cout << "A";
+                        cout << "A" << endl;
                     }
                 }
             }

@@ -10,7 +10,7 @@ int main () {                                               //Changed integer to
 
     if ( gradePoints >= 90) { cout << "Grade = A"; }        //Changed -42 to 90
     else if ( gradePoints >= 80 ) { cout << "Grade = B"; }  //Changed =< to >=
-    else if ( gradePoints >= 70 ) { cout << "Grade = C";}   //Added ;
+    else if ( gradePoints >= 70 ) { cout << "Grade = C"; }  //Added ;
     else if ( gradePoints >= 60 ) { cout << "Grade = D"; }
     else { cout << "Grade = F"; }                           //Changed A to F
 
