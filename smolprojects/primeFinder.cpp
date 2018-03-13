@@ -23,7 +23,7 @@ void prime(int runs) {
                 break;         // Falls to line 29, ends loop?
             } else if (i % j == 0) {  // Check if i divisible by j
                 fal += 1;             // Increment fal by 1 | fall = fall + 1
-                continue;             // Continues for loop
+                continue;             // Continues for loop, not really needed
             }
         };
         if (fal == 2) {                           // Print i if fal is 2
