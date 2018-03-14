@@ -3,7 +3,7 @@
     ! WAIVER
     F WorH/U6L5 Propaganda
     F Math/PT2 Article
-    F Chem/PT5.1 Smores
+    F Chem/PT5.1 Smores | ~
     U CIS /Discussion 9
     U CIS /Assignment 9
         $1, $2, 3, 4, 5, Q
@@ -23,3 +23,4 @@
     * w3m use feh instead of imagemagick
     * Port Fezian Time to Classic
     * Telegram-cli
+    * CDM
