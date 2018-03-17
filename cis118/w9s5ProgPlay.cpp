@@ -1,9 +1,9 @@
+#include <stdlib.h>        //Need for exit(), so program can end early
 #include <iostream>
-#include <stdlib.h>  //Need for exit(), so program can end early
 using namespace std;
 
 bool yNCheck(char check);  // Define function
-bool notAnIf(bool check);  // Definitely doesn't count to if limit...
+bool notAnIf(bool check);  // Definitely doesn't count to the amount of ifs...
 
 int main() {
     char day, input;
@@ -21,6 +21,9 @@ int main() {
         notAnIf(isClean && homeworkDone);
     } else if ((day == 'h') || (day == 'f') || (day == 's') || (day == 'u')) {
         notAnIf(isClean || homeworkDone);
+    } else {
+        cout << "Not a day of the week";
+        exit(0);
     }
 
     return 0;  // End program
@@ -35,19 +38,6 @@ bool notAnIf(bool check) {
         return 0;
     }
 };
-
-// bool yNCheck(char check) {
-//     if (check == 'y' || check == 'n') {
-//         if (check == 'y') {
-//             return 1;
-//         } else {
-//             return 0;
-//         }
-//     } else {  // Ends program if user does not input y or n
-//         cout << "Not y or n. Try again.";
-//         exit(0);
-//     }
-// };
 
 bool yNCheck(char check) {
     if (check == 'y') {
