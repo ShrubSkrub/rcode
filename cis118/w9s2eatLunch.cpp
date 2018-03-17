@@ -35,9 +35,9 @@ int main() {
     time = yNCheck(input);
 
     if (hungry && money && transport && want && open && time) {
-        cout << "You can have lunch at McDonalds.";
+        cout << "You can have lunch at McDonalds.\n";
     } else {
-        cout << "You cannot have lunch at McDonalds.";
+        cout << "You cannot have lunch at McDonalds.\n";
     }
 
     return 0;  // End program
@@ -51,7 +51,7 @@ bool yNCheck(char check) {
             return 0;
         }
     } else {  // Ends program if user does not input y or n
-        cout << "Not y or n. Try again.";
+        cout << "Not y or n. Try again.\n";
         exit(0);
     }
 };

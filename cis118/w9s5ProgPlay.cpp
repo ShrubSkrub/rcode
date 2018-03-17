@@ -22,7 +22,7 @@ int main() {
     } else if ((day == 'h') || (day == 'f') || (day == 's') || (day == 'u')) {
         notAnIf(isClean || homeworkDone);
     } else {
-        cout << "Not a day of the week";
+        cout << "First input was not a day of the week";
         exit(0);
     }
 
@@ -45,7 +45,7 @@ bool yNCheck(char check) {
     } else if (check == 'n') {
         return 0;
     } else {  // Ends program if user does not input y or n
-        cout << "Not y or n. Try again.";
+        cout << "Not y or n. Try again.\n";
         exit(0);
     }
 };
