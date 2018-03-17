@@ -26,7 +26,7 @@ if (haveTime || (! haveWork) || (! feelgood)) { relax(); }
 f. What is the purpose of a Truth Table?
 The purpose of a truth table is to show all the possible results of a logical expression.
 g. Which of the 3 code examples in this lecture compile correctly or do they have syntax errors?
-
+Code examples 1 and 2 compile correctly and have no syntax errors.  Code example 3 is missing the brackets for the if statement, but the code still compiles and functions.
 h. What is the difference between a simple and complex condition?
 A simple condition uses only one relationship/comparison, while a complex condition uses more than one.
 i. What is the best type of criteria?
