@@ -2,6 +2,7 @@
 
     U CIS /Discussion 10 | 3
     U CIS /Assignment 10
+        $1, $2, $3, 4, Q
     U CIS /Quiz 10
 
 # To Do
