@@ -14,23 +14,23 @@ int main() {
 
     switch(choice){
         case 1:
-            cout  << "Chose Single player";
+            cout  << "Chose Single player\n";
             break;
         case 2:
-            cout  << "Chose Two player - vs computer";
+            cout  << "Chose Two player - vs computer\n";
             break;
         case 3:
-            cout  << "Chose Two player - vs local player";
+            cout  << "Chose Two player - vs local player\n";
             break;
         case 4:
-            cout  << "Chose Multiplayer - Internet";
+            cout  << "Chose Multiplayer - Internet\n";
             break;
         case 5:
-            cout  << "Chose to exit";
+            cout  << "Chose to exit\n";
             exit(0);
             break;
         default:
-            cout << "Not a valid option";
+            cout << "Not a valid option\n";
     }
 
     return 0; // End program

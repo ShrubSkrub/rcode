@@ -1,9 +1,11 @@
 # Homework
 
-    U CIS /Discussion 10 | 3
+    U CIS /Discussion 10 | 2
     U CIS /Assignment 10
-        $1, $2, $3, 4, Q
+        $1, $2, $3, $4, Q
     U CIS /Quiz 10
+
+    T HC  /Discussion thing
 
 # To Do
 
@@ -16,5 +18,4 @@
     * w3m use feh instead of imagemagick
     * Port Fezian Time to Classic
     * sed to change settings in configs
-    * Merge themes, black and green/yellow
-        * Also different bold colors
+    * https://github.com/arcticicestudio/nord-termite/blob/develop/src/config
