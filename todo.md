@@ -7,4 +7,4 @@
     * KEYBOARD COVER
     * Hacker One Class
     * Notification system - Dunst notify?
-    * Powerline fonts
+    * Create bash menu
