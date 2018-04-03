@@ -1,5 +1,7 @@
 # Homework
 
+    * U/Engl/BOOK
+        * https://www.amazon.com/Them-Adventures-Extremists-Jon-Ronson/dp/0743233212
     * U/CIS /Discussion - Repeating sequences | 2
     * U/CIS /Discussion - FOR loop | 3
     * U/CIS /Assignment
