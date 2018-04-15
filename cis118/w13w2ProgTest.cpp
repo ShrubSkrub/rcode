@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
+
 int main() {
     // Calculate grade average
 
     int numberGrades = 0;
-    int sumGrades = 0;
+    int sumGrades;
     int aGrade = 0;
 
     cout << "How many grades to enter: ";
@@ -23,3 +24,5 @@ int main() {
 
     return 0;
 }
+
+// With the =0 removed, the program cannot using it in an equation, as it has no value at that point. You need to initialize variables so that you don't end up with bugs like that.
