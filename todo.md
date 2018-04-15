@@ -2,7 +2,7 @@
 -15-09-
     * U/CIS /Discussion - While Loops | 2
     * U/CIS /Assignment - ~/Downloads/cisWk13.pdf
-        * 1, $2, $3, $4, 5, 6, Q
+        * 1, $2, $3, $4, $5, 6, Q
     * U/CIS /Quiz
 -16-16-
     * T/WorH/Finish Night Book
