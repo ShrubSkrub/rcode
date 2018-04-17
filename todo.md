@@ -1,17 +1,12 @@
 # Homework
--15-09-
-    * U/CIS /Discussion - While Loops | 2
-    * U/CIS /Assignment - ~/Downloads/cisWk13.pdf
-        * 1, $2, $3, $4, $5, $6, Q
-    * U/CIS /Quiz
 -16-16-
     * T/WorH/Finish Night Book
     * T/Engl/CC5.0 Generating Story Ideas
     * T/Engl/Them: Read to Ch2 - https://goo.gl/M1vxHV
     * T/Engl/Answer discussion questions
-    * F/WorH/PT 7.1: Night
     * F/Engl/SS5.1 Pitch Doc
-    * F/PE  /Prove it
+    ! F/WorH/PT 7.1: Night
+    ! F/PE  /Prove it
     * U/CIS /Discussion | 3
     * U/CIS /Assignment
     * U/CIS /Quiz
@@ -58,6 +53,7 @@
     * Ask about 130 credits
     * Hacker One Class
     * Notification system - Dunst notify?
-    * Change i3 status colors
     * Zathura pptx
+    * i3status window title
+    * vim persistent undo
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
