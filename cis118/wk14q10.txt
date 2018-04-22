@@ -1,0 +1,22 @@
+1) What is an array ?
+An array is a way to declare multiple variables at once.
+2) What are the restrictions on the datatype for each element of an array ?
+A char is 1 byte, an int is 4 bytes, a float is 4 bytes, and a double is 8 bytes.
+3) Why use an array ?
+You should use an array because it saves time and makes writing code easier.
+4) What is the 'Offset problem' with arrays ?
+The offset problem is that arrays start at 0, so if you declare an array with a size of 10, the index is 0-9.
+5) What is short list initialization? Give an example
+Short list initialization is assigning all the variables in an array a single value.  Example:
+int array[20] = {0};
+6) What is long list initialization? Give an example
+Long list initialization is individually assigning each of the elements in an array a value.  Example:
+int shortArray[4] = {54, 89, 67, 101};
+7) What are Nested for loops ?
+Nested for loops are for loops that contain another for loop inside it's itself.
+8) What are multidimensional arrays ?
+Multidimensional arrays are arrays that have more than 1 range of value; a two dimensional array would be a table.
+9) Why are the array elements contiguous ?
+Array elements are contiguous because it makes it easier to the computer to retrieve the data.
+10) Do you like arrays ?
+I like array because they are very useful.
