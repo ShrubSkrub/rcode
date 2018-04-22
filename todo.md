@@ -2,6 +2,7 @@
 -16-16-
     * U/CIS /Discussion | 1
     * U/CIS /Assignment
+        * $1, $2, $3, $4, 5, 6, 7, 8, Q
     * U/CIS /Quiz
 -17-23-
     * T/Engl/Them: Read Ch3-4
