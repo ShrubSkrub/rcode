@@ -1,9 +1,4 @@
 # Homework
--16-16-
-    > * U/CIS /Discussion
-    * U/CIS /Assignment
-        * $1, $2, $3, $4, $5, $6, 7, $8, $Q
-    * U/CIS /Quiz
 -17-23-
     * T/Engl/Them: Read Ch3-4
     * T/Engl/Answer discussion questions
