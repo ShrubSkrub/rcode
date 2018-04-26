@@ -1,0 +1,10 @@
+#!/bin/sh -e
+# Quick and dirty script to quickly start up i3 with vpn support
+
+echo "Stopping network manager..."
+sudo stop shill
+echo "Restarting network manager with VPN support.."
+sudo start shill BLACKLISTED_DEVICES=tun0
+echo "Starting enter-chroot script..."
+sudo enter-chroot -n xenial xinit
+
