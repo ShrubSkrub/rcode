@@ -1,24 +1,26 @@
 # Homework
 -17-23-
-    * H/Chem/CC Quiz
-    * H/Engl/Owen Interview afterschool
+    > * H/Chem/CC Quiz
     > * F/Math/Classwork - https://goo.gl/pGiVJt
         > * 6.2.3: 95-100 (pick 4)
         > * 6.2.4: 117, 118, 120
-    * F/Math/Problem set
+    > * F/Math/Problem set
         > * 6.2.3: 101, 102, 103, 104, 108, 109, 113, 115
-        * 6.2.4: 125, 126, 126, 129, 139
-    * F/Chem/SS Form
+        > * 6.2.4: 125, 126, 126, 129, 139
+    * H/Engl/Owen Interview afterschool
+
     * F/Engl/Pitch Doc
+    * F/Chem/SS Form
 
     * F/Engl/INTERVIEW Nikolas - P5 O'Dell FIT
+    * F/Engl/INTERVIEW Noah - P5 2A FIT
 
     * U/CIS /Discussion | 2
     * U/CIS /Assignment
-        * 1, 2, 3, 4, 5, Q
+        * $1, $2, 3, 4, 5, Q
     * U/CIS /Quiz
 
-    ! U/Engl/Club News Story !!!
+    ! U - 9 pm/Engl/Club News Story !!!
 -18-30-
     ! M/WorH/PT7.2 - Genocide
     * T/Engl/SS6.4 Follower Factory
@@ -44,6 +46,6 @@
     1 Chem Quiz
     2 Math Problem Set
     3 WorH PT
-    4 Georgina Interview - Anderson Room
+    4 Georgina Interview - Pierce Room
     5 Free
-    A Owen Interview - Afterschool | Volunteer Club
+    A Owen Interview - Afterschool | Volunteer or DnD Club
