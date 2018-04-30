@@ -2,18 +2,15 @@
 using namespace std;
 
 void calcArea(double radius) {
-    cout << "Area\n";
-    cout << (radius * radius) << endl;
+    cout << "Area: " << (radius * radius) << endl;
 }
 
 void calcDiameter(double radius) {
-    cout << "Diameter\n";
-    cout << (radius / 2) << endl;
+    cout << "Diameter: " << (radius / 2) << endl;
 }
 
 void calcCircumference(double radius) {
-    cout << "Circumference/Perimeter\n";
-    cout << (radius * 4) << endl;
+    cout << "Circumference/Perimeter: " << (radius * 4) << endl;
 }
 
 int main() {
