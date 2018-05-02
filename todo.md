@@ -1,13 +1,15 @@
 # Homework
--17-23-
-    * U/CIS /Discussion | 2
-    * U/CIS /Assignment
-        * $1, $2, $3, $4, 5, Q
-    * U/CIS /Quiz
-    > ! U - 9 pm/Engl/Club News Story !!! | Share with editor
 -18-30-
-    ! M/WorH/PT7.2 - Genocide
-    * T/Engl/SS6.4 Follower Factory
+    ! Engl/Get interviews about GoGuardian!
+    W/Engl/Interview with Paul Cerra - P5
+
+    * F/Math/Week 11 Problem set - All of U6 Closure
+    * U/CIS /Discussion | 3
+    * U/CIS /Assignment
+        * 1, 2, Q
+    * U/CIS /Quiz
+-19-07-
+    * M/Engl/GoGuardian Article
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
     * CONCURRENT ENROLLMENT - SUMMER
@@ -15,6 +17,7 @@
         * https://goo.gl/WT4oev - Python Class
         * https://goo.gl/kGRgJL - Obj. C++ Class
     * Ask about 130 credits
+    * Ask Quincy about photo
     * Hacker One Class
     * Notification system - Dunst notify?
     * i3status window title
