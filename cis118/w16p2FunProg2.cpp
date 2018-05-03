@@ -12,7 +12,12 @@ int main() {
     cout << "Enter name to search: ";
     cin >> iName;
 
-    cout << "Name index: " << searchArray(iName, firstNameArray, 7) << endl;
+    if (searchArray(iName, firstNameArray, 7) < 7) {
+        cout << "Name index: " << searchArray(iName, firstNameArray, 7) << endl;
+    } else {
+        cout << "Name not found\n";
+    }
+
     printAllNames(firstNameArray, 7);
 
     cout << "\nTrying to delete name...\n";
@@ -39,6 +44,7 @@ int searchArray(string tName, string tArray[], int size) {
 }
 
 void printAllNames(string tArray[], int size) {
+    cout << "Current state of array: ";
     for (int i=0; i < size; i++) {
         if (tArray[i] != "") {
             cout << tArray[i] << " ";
