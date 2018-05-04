@@ -1,19 +1,14 @@
 # Homework
 -18-30-
-    ! Engl/Get interviews about GoGuardian!
-    H/Engl/Interview with Paul Cerra - P5
-    > H/Chem/Quiz
-
-    * F/Engl/Pitch Doc
-    > * F/Math/Week 11 Problem set - All of U6 Closure
     * U/CIS /Discussion | 2
     * U/CIS /Assignment
         * $1, $2, Q
     * U/CIS /Quiz
-    * ?/WorH/Slides and stuff
 -19-07-
     * M/Engl/GoGuardian Article
+    * M/Engl/Article Revisions
     * T/Math/PT Calculator
+    * ?/WorH/Slides and stuff
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
     * CONCURRENT ENROLLMENT - SUMMER
