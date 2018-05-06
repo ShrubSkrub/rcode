@@ -2,7 +2,7 @@
 -18-30-
     * U/CIS /Discussion | 2
     * U/CIS /Assignment
-        * $1, $2, Q
+        * $1, $2, $Q
     * U/CIS /Quiz
 -19-07-
     * M/Engl/GoGuardian Article
