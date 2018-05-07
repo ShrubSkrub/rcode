@@ -1,7 +1,7 @@
 # Homework
 -19-07-
-    * M/Engl/GoGuardian Article
-    * M/Engl/Article Revisions
+    > * M/Engl/GoGuardian Article
+    > * M/Engl/Article Revisions
     * T/Math/PT Calculator | ~
     * ?/WorH/Slides and stuff
 -20-14-
