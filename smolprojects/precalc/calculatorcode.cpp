@@ -111,6 +111,7 @@ vMagDir vectorAddMD(double AM, double AD, double BM, double BD) {
 
     vectorR = componentToMagnitude(tempX, tempY);
 
+    cout << "-----------------------\n";
     cout << "Resultant Magnitude: " << vectorR.mag << endl;
     cout << "Resultant Direction: " << vectorR.dir << endl;
 
@@ -219,7 +220,6 @@ int main() {
         switch (option) {
             case '1' :
                 cout << "===========================" << endl;
-                // cout << "[1] Convert from Magnitude and Direction to Component\n[2] Convert from Component to Magnitude and Direction\n[3] Add vectors in Magnitude and Direction form\n";
                 cout << "[1] Convert from MD to Component\n[2] Convert from Component to MD\n[3] Add vectors in MD form\n";
                 cout << "> ";
                 cin >> option2;
@@ -234,6 +234,7 @@ int main() {
                         vectorA.dir = input2;
                         vCompForm vectorB;
                         vectorB = magnitudeToComponent(vectorA.mag, vectorA.dir);
+                        cout << "-----------------------\n";
                         cout << "Vx: " << vectorB.x << endl;
                         cout << "Vy: " << vectorB.y << endl;
                         break;
@@ -245,6 +246,7 @@ int main() {
                         cin >> tempVy;
                         tempMag = sqrt((tempVx * tempVx) + (tempVy * tempVy));
                         tempDir = atand(tempVy / tempVx);
+                        cout << "-----------------------\n";
                         cout << "Magnitude: " << tempMag << endl;
                         cout << "Direction: " << tempDir << endl;
                         break;
@@ -271,10 +273,12 @@ int main() {
                 break;
             case '2' :
                 result = lawOfSin();
+                cout << "-----------------------\n";
                 cout << "Missing Angle/Length: " + to_string(result) << endl;
                 break;
             case '3' :
                 result = lawofCos();
+                cout << "-----------------------\n";
                 cout << "Missing Angle/Length: " + to_string(result) << endl;
                 break;
             case 'c' :
