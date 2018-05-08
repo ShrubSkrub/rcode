@@ -1,11 +1,12 @@
 # Homework
 -19-07-
-    > * M/Engl/GoGuardian Article
-    > * M/Engl/Article Revisions
-    * T/Math/PT Calculator | ~
+    * T/Engl/Ch7-8 Reading Questions
     * ?/WorH/Slides and stuff
 -20-14-
     * M/Engl/HF Organization Article
+    * U/CIS /Discussion | 3
+    * U/CIS /Assignment
+    * U/CIS /Quiz
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
     * CONCURRENT ENROLLMENT - SUMMER
