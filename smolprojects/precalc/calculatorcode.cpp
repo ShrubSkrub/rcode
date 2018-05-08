@@ -43,29 +43,48 @@ double atand(double angle)
     return atan (angle) * 180.0 / PI;
 }
 
+int quadFind(int x, int y) {
+    cout << "Running quadfind" << endl;
+    if (x >= 0) {
+        if (y >= 0) {
+            return 1;
+        } else {
+            return 4;
+        }
+    } else {
+        if (y >= 0) {
+            return 2;
+        } else {
+            return 3;
+        }
+    }
+}
+
 vMagDir componentToMagnitude(double vX, double vY) {
     cout << "Component to Magnitude:\n";
-    // // vCompForm tempComp;
-    // vMagDir tempMagDir;
-    // tempMagDir.mag = sqrt((vX * vX) + (vY * vY));
-    // tempMagDir.dir = tand(vY / vX);
-    // cout << "Magnitude: " << tempMagDir.mag << endl;
-    // cout << "Direction: " << tempMagDir.dir << endl;
-    // return tempMagDir;
-
-    double tempVx, tempVy, tempMag, tempDir;
+    double tempVx, tempVy, tempMag, tempDir, constDir;
+    int quad;
     vMagDir tempMagDir;
     tempVx = vX;
     tempVy = vY;
 
     tempMag = sqrt((tempVx * tempVx) + (tempVy * tempVy));
     tempDir = atand(tempVy / tempVx);
-    cout << "Magnitude: " << tempMag << endl;
-    cout << "Direction: " << tempDir << endl;
-    tempMagDir.mag = tempMag;
-    tempMagDir.dir = tempDir;
-    return tempMagDir;
 
+    quad = quadFind(tempVx, tempVy);
+    cout << "Quadrant: " << quad << endl;
+    if(quad == 1){
+        constDir=90-tempDir;
+    } else {
+        constDir=((quad*90)-90)-tempDir;
+    }
+
+    cout << "Magnitude: " << tempMag << endl;
+    cout << "Direction: " << constDir << endl;
+
+    tempMagDir.mag = tempMag;
+    tempMagDir.dir = constDir;
+    return tempMagDir;
 }
 
 vCompForm magnitudeToComponent(double vM, double vD) {
@@ -239,16 +258,33 @@ int main() {
                         cout << "Vy: " << vectorB.y << endl;
                         break;
                     case '2' :
-                        double tempVx, tempVy, tempMag, tempDir;
+                        double tempVx, tempVy, tempMag, tempDir, constDir;
+                        int quad;
                         cout << "Input Vx: ";
                         cin >> tempVx;
                         cout << "Input Vy: ";
                         cin >> tempVy;
+                        // tempMag = sqrt((tempVx * tempVx) + (tempVy * tempVy));
+                        // tempDir = atand(tempVy / tempVx);
+                        // cout << "-----------------------\n";
+                        // cout << "Magnitude: " << tempMag << endl;
+                        // cout << "Direction: " << tempDir << endl;
+
                         tempMag = sqrt((tempVx * tempVx) + (tempVy * tempVy));
                         tempDir = atand(tempVy / tempVx);
+
+                        quad = quadFind(tempVx, tempVy);
+                        cout << "Quadrant: " << quad << endl;
+                        if(quad == 1){
+                            constDir=90-tempDir;
+                        } else {
+                            constDir=((quad*90)-90)-tempDir;
+                        }
+
                         cout << "-----------------------\n";
                         cout << "Magnitude: " << tempMag << endl;
-                        cout << "Direction: " << tempDir << endl;
+                        cout << "Direction: " << constDir << endl;
+
                         break;
                     case '3' :
                         double avm, avd, bvm, bvd;
