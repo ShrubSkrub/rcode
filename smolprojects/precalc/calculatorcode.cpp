@@ -33,8 +33,6 @@ double acosd(double angle)
 }
 double tand(double angle)
 {
-    // return tan (angle*PI/180);
-    // return tan (angle) * 180 / PI;
     return tan ( angle * PI / 180.0 );
 }
 
@@ -62,21 +60,32 @@ int quadFind(int x, int y) {
 
 vMagDir componentToMagnitude(double vX, double vY) {
     cout << "Component to Magnitude:\n";
-    double tempVx, tempVy, tempMag, tempDir, constDir;
+    double tempVx, tempVy, tempMag, tempDir, constDir, aVx, aVy;
     int quad;
     vMagDir tempMagDir;
     tempVx = vX;
     tempVy = vY;
 
     tempMag = sqrt((tempVx * tempVx) + (tempVy * tempVy));
-    tempDir = atand(tempVy / tempVx);
+    // fabs is absolute value for doubles
+    tempDir = atand(fabs(tempVy) / fabs(tempVx));
+
 
     quad = quadFind(tempVx, tempVy);
     cout << "Quadrant: " << quad << endl;
-    if(quad == 1){
-        constDir=90-tempDir;
-    } else {
-        constDir=((quad*90)-90)-tempDir;
+    switch (quad) {
+        case 1:
+            constDir = tempDir;
+            break;
+        case 2:
+            constDir = 180 - tempDir;
+            break;
+        case 3:
+            constDir = 270 - tempDir;
+            break;
+        case 4:
+            constDir = 360 - tempDir;
+            break;
     }
 
     cout << "Magnitude: " << tempMag << endl;
@@ -90,7 +99,6 @@ vMagDir componentToMagnitude(double vX, double vY) {
 vCompForm magnitudeToComponent(double vM, double vD) {
     cout << "Magnitude to Component:\n";
     double opposite, adjacent;
-    // cout << "vM: " << vM << ", vD: " << vD << endl;
     opposite = (sind(vD) * vM);
     adjacent = (cosd(vD) * vM);
 
@@ -119,9 +127,6 @@ vMagDir vectorAddMD(double AM, double AD, double BM, double BD) {
 
     cout << "A X: " << compVectorA.x << ", A Y: " << compVectorA.y << endl;
     cout << "B X: " << compVectorB.x << ", B Y: " << compVectorB.y << endl;
-
-    // compVectorR.x = (compVectorA.x + compVectorB.x);
-    // compVectorR.y = (compVectorA.y + compVectorB.y);
 
     tempX = (compVectorA.x + compVectorB.x);
     tempY = (compVectorA.y + compVectorB.y);
@@ -258,27 +263,34 @@ int main() {
                         cout << "Vy: " << vectorB.y << endl;
                         break;
                     case '2' :
-                        double tempVx, tempVy, tempMag, tempDir, constDir;
+                        double tempVx, tempVy, tempMag, tempDir, constDir, aVx, aVy;
                         int quad;
+
                         cout << "Input Vx: ";
                         cin >> tempVx;
                         cout << "Input Vy: ";
                         cin >> tempVy;
-                        // tempMag = sqrt((tempVx * tempVx) + (tempVy * tempVy));
-                        // tempDir = atand(tempVy / tempVx);
-                        // cout << "-----------------------\n";
-                        // cout << "Magnitude: " << tempMag << endl;
-                        // cout << "Direction: " << tempDir << endl;
 
                         tempMag = sqrt((tempVx * tempVx) + (tempVy * tempVy));
-                        tempDir = atand(tempVy / tempVx);
+                        // fabs is absolute value for doubles
+                        tempDir = atand(fabs(tempVy) / fabs(tempVx));
+
 
                         quad = quadFind(tempVx, tempVy);
                         cout << "Quadrant: " << quad << endl;
-                        if(quad == 1){
-                            constDir=90-tempDir;
-                        } else {
-                            constDir=((quad*90)-90)-tempDir;
+                        switch (quad) {
+                            case 1:
+                                constDir = tempDir;
+                                break;
+                            case 2:
+                                constDir = 180 - tempDir;
+                                break;
+                            case 3:
+                                constDir = 270 - tempDir;
+                                break;
+                            case 4:
+                                constDir = 360 - tempDir;
+                                break;
                         }
 
                         cout << "-----------------------\n";
