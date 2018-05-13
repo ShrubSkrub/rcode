@@ -10,26 +10,18 @@ int myFactorial( int integer ) {
 }
 
 int main() {
-    int i, j, N, input;
+    int i = 1, j = 1, input;
     cout << "Input: ";
     cin >> input;
 
-    // for (int i = input; i == 1; i--) {
-    //     i = (i * (i - 1));
-    // }
-
-    while (i > 0) {
-        if (i == 1) {
-            cout << 1;
-        } else {
-            j = i - 1;
-        }
-        i--;
+    while (i <= input) {
+        j *= i;
+        i++;
     }
 
     // i = myFactorial(input);
 
-    cout << i;
+    cout << j << endl;
 
     return 0; // End program
 }
