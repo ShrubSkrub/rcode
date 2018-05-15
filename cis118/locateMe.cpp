@@ -5,7 +5,34 @@ int p1CellCount = 0;
 int p2CellCount = 0;
 
 void printArr(int arr[8][8]) {
+    cout << "[ ][1][2][3][4][5][6][7][8]\n";
     for (int i = 0; i < 8; i++) {
+        switch (i) {
+            case 0:
+                cout << "[A]";
+                break;
+            case 1:
+                cout << "[B]";
+                break;
+            case 2:
+                cout << "[C]";
+                break;
+            case 3:
+                cout << "[D]";
+                break;
+            case 4:
+                cout << "[E]";
+                break;
+            case 5:
+                cout << "[F]";
+                break;
+            case 6:
+                cout << "[G]";
+                break;
+            case 7:
+                cout << "[H]";
+                break;
+        }
         for (int j = 0; j < 8; j++) {
             cout << "[";
             // cout << i << ", " << j << " = ";
@@ -96,16 +123,24 @@ void pickCell(int arr[8][8]) {
     }
 }
 
-// Checking for win, false means array is empty
+// Checking for win, true means array is empty
 bool checkArray(int arr[8][8]) {
+    int check = 0;
     for (int i = 0; i < 8 * 8; ++i) {
-        if (arr[0][i] != 0) {
-            return true;
-            break;
+        if (arr[0][i] == 0) {
+            cout << "0";
         } else {
-            return false;
-            break;
+            cout << "1";
+            check = 1;
         }
+    }
+
+    if (check == 0) {
+        cout << "\nTrue, Array is empty\n";
+        return true;
+    } else {
+        cout << "\nFalse, Array has values\n";
+        return false;
     }
 }
 
@@ -113,7 +148,7 @@ int main() {
     int p1[8][8] = {{0}};
     int p2[8][8] = {{0}};
     int emptyBoard[8][8] = {{0}};
-    bool check = true;
+    bool check = false;
 
     system("clear");
     cout << "Player 1, choose your cells\n";
@@ -131,20 +166,23 @@ int main() {
 
         // Check for win condition
         check = checkArray(p2);
-        if (!check) {
+        if (check) {
             cout << "Player 1 wins!\n";
             break;
         }
+        check = false;
 
         cout << "Player 2's turn!\n";
         pickCell(p1);
 
         // Check for win condition
         check = checkArray(p1);
-        if (!check) {
+        if (check) {
             cout << "Player 2 wins!\n";
             break;
         }
+        check = false;
+        cout << "Loop ended\n";
     }
 
     return 0;  // End program

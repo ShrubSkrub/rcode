@@ -4,6 +4,7 @@
     * F/Math/Classwork
         * 8.3.1: 81-85
         * 8.3.2: 96-98f
+    * F/Math/Problem Set
     * F/Chem/PT 5.2 Water
     * U/CIS /FINAL PROJECT | !!!
     * U/CIS /Discussion | 3
