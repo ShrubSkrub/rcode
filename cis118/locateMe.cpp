@@ -5,7 +5,7 @@ int p1CellCount = 0;
 int p2CellCount = 0;
 
 void printArr(int arr[8][8]) {
-    cout << "[ ][1][2][3][4][5][6][7][8]\n";
+    cout << "\n[ ][1][2][3][4][5][6][7][8]\n";
     for (int i = 0; i < 8; i++) {
         switch (i) {
             case 0:
@@ -35,7 +35,6 @@ void printArr(int arr[8][8]) {
         }
         for (int j = 0; j < 8; j++) {
             cout << "[";
-            // cout << i << ", " << j << " = ";
             cout << arr[i][j];
             cout << "]";
         }
@@ -85,18 +84,46 @@ int convCharToNum(char input) {
     return letterNum;
 }
 
-void chooseCells(int arr[8][8]) {
-    char letter;
-    int number, letterNum = 10;
-    for (int i = 0; i < 8; i++) {
-        letterNum = 10;
-        while (letterNum == 10) {
-            cout << "Enter cell " << (i + 1) << " (ie. H8): ";
-            cin >> letter >> number;
-            letterNum = convCharToNum(letter);
-        }
-        arr[letterNum][number - 1] = 1;
+bool isNumber(int in) {
+    if (in < 0) {
+        return true;
+    } else {
+        return false;
     }
+}
+
+void chooseCells(int arr[8][8]) {
+    char letter, yn;
+    int number = 10, letterNum = 10;
+    while (true) {
+        for (int i = 0; i < 8; i++) {
+            letterNum = 10;
+            while (letterNum == 10) {
+                cout << "Enter cell " << (i + 1) << " (ie. H8): ";
+                cin >> letter >> number;
+                letterNum = convCharToNum(letter);
+            }
+            arr[letterNum][number - 1] = 1;
+        }
+        printArr(arr);
+        cout << "Is this correct? (y or n): ";
+        while (true) {
+            cin >> yn;
+
+            if (yn == 'y') {
+                break;
+            } else if (yn == 'n') {
+                break;
+            } else {
+                cout << "Not y or n. Try again.\n";
+            }
+        }
+        if (yn == 'y') {
+            break;
+        }
+        system("clear");
+    }
+    system("clear");
 }
 
 void pickCell(int arr[8][8]) {
@@ -108,7 +135,7 @@ void pickCell(int arr[8][8]) {
             cin >> letter >> number;
             letterNum = convCharToNum(letter);
             if (arr[letterNum][number - 1] == 1) {
-                cout << "You guessed correctly!\n";
+                cout << "You guessed correctly, go again!\n";
                 arr[letterNum][number - 1] = 0;
             } else if (arr[letterNum][number - 1] == 2) {
                 cout << "You already guessed this one.\n";
@@ -128,18 +155,18 @@ bool checkArray(int arr[8][8]) {
     int check = 0;
     for (int i = 0; i < 8 * 8; ++i) {
         if (arr[0][i] == 0) {
-            cout << "0";
+            // cout << "0";
         } else {
-            cout << "1";
+            // cout << "1";
             check = 1;
         }
     }
 
     if (check == 0) {
-        cout << "\nTrue, Array is empty\n";
+        // cout << "\nTrue, Array is empty\n";
         return true;
     } else {
-        cout << "\nFalse, Array has values\n";
+        // cout << "\nFalse, Array has values\n";
         return false;
     }
 }
@@ -149,16 +176,13 @@ int main() {
     int p2[8][8] = {{0}};
     int emptyBoard[8][8] = {{0}};
     bool check = false;
+    char empty;
 
     system("clear");
     cout << "Player 1, choose your cells\n";
     chooseCells(p1);
-    printArr(p1);
-    // system("clear");
     cout << "Player 2, choose your cells\n";
     chooseCells(p2);
-    printArr(p2);
-    // system("clear");
 
     while (true) {
         cout << "Player 1's turn!\n";
@@ -182,7 +206,7 @@ int main() {
             break;
         }
         check = false;
-        cout << "Loop ended\n";
+        // cout << "Loop ended\n";
     }
 
     return 0;  // End program
