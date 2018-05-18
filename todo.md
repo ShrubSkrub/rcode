@@ -1,24 +1,29 @@
 # Homework
 -20-14-
-    * W/Engl/Them Questions
-    * F/Math/Classwork
-        * 8.3.1: 81-85
-        * 8.3.2: 96-98f
-    * F/Math/Problem Set
+    > * W/Engl/Them Questions
+    > * F/Math/Classwork
+    >     * 8.3.1: 81-85
+    >     * 8.3.2: 96-98f
+    > * F/Math/Problem Set
     * F/Chem/PT 5.2 Water
     * U/CIS /FINAL PROJECT | !!!
-    * U/CIS /Discussion | 3
-    * U/CIS /Assignment
-        * 1, 2, 3, 4, Q7
+    * U/CIS /Discussion | 2
+    > * U/CIS /Assignment
+        * $1, $2, $3, $4, $Q7
     * U/CIS /Quiz
 -21-21-
-    * M/CIS/Final Exam | !!!
+    * M/CIS /Final Exam | !!!
+    * M/Engl/Article Edits Due
+    * T/PE  /Promote it
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
     * CONCURRENT ENROLLMENT - SUMMER
         * https://goo.gl/7yNfPZ - Form
         * https://goo.gl/WT4oev - Python Class
         * https://goo.gl/kGRgJL - Obj. C++ Class
+    * Concurrent enrollment
+        * Summer Registration Deadline - May 31
+        * Fall   Registration Deadline - July 31
     * Ask about 130 credits
     * Send PCerra Ubuntu Repositories
     * Hacker One Class
@@ -63,7 +68,7 @@ Alternate between players
 
 The first player to pick ALL the other players marked cells wins
 
- 
+
 
 ============
 
