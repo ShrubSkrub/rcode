@@ -9,8 +9,7 @@
     * U/CIS /FINAL PROJECT | !!!
     * U/CIS /Discussion | 2
     > * U/CIS /Assignment
-        * $1, $2, $3, $4, $Q7
-    * U/CIS /Quiz
+    > * U/CIS /Quiz
 -21-21-
     * M/CIS /Final Exam | !!!
     * M/Engl/Article Edits Due
