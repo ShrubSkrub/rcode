@@ -93,7 +93,7 @@ bool isNumber(int in) {
     }
 }
 
-// Called at start of game to fill the arrays
+// Called at start of game to fill the arrays for each player
 void chooseCells(char arr[8][8]) {
     char letter, yn;
     int number = 10, letterNum = 10;
@@ -107,9 +107,10 @@ void chooseCells(char arr[8][8]) {
             }
             arr[letterNum][number - 1] = 'x';
         }
-        printArr(arr);
-        cout << "Is this correct? (y or n): ";
         while (true) {
+            system("clear");
+            printArr(arr);
+            cout << "Is this correct? (y or n): ";
             cin >> yn;
 
             if (yn == 'y') {
@@ -215,7 +216,6 @@ int main() {
             break;
         }
         check = false;
-        // cout << "Loop ended\n";
     }
 
     return 0;  // End program
