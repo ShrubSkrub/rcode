@@ -2,39 +2,60 @@
 using namespace std;
 
 // Function is used only to print array contents
-void printArr(char arr[8][8]) {
-    cout << "\n[ ][1][2][3][4][5][6][7][8]\n";
-    for (int i = 0; i < 8; i++) {
+void printArr(char arr[15][15]) {
+    cout << "\n[   ][ 1 ][ 2 ][ 3 ][ 4 ][ 5 ][ 6 ][ 7 ][ 8 ][ 9 ][ 10][ 11][ 12][ 13][ 14][ 15]\n";
+    for (int i = 0; i < 15; i++) {
         switch (i) {
             case 0:
-                cout << "[A]";
+                cout << "[ A ]";
                 break;
             case 1:
-                cout << "[B]";
+                cout << "[ B ]";
                 break;
             case 2:
-                cout << "[C]";
+                cout << "[ C ]";
                 break;
             case 3:
-                cout << "[D]";
+                cout << "[ D ]";
                 break;
             case 4:
-                cout << "[E]";
+                cout << "[ E ]";
                 break;
             case 5:
-                cout << "[F]";
+                cout << "[ F ]";
                 break;
             case 6:
-                cout << "[G]";
+                cout << "[ G ]";
                 break;
             case 7:
-                cout << "[H]";
+                cout << "[ H ]";
+                break;
+            case 8:
+                cout << "[ I ]";
+                break;
+            case 9:
+                cout << "[ J ]";
+                break;
+            case 10:
+                cout << "[ K ]";
+                break;
+            case 11:
+                cout << "[ L ]";
+                break;
+            case 12:
+                cout << "[ M ]";
+                break;
+            case 13:
+                cout << "[ N ]";
+                break;
+            case 14:
+                cout << "[ O ]";
                 break;
         }
-        for (int j = 0; j < 8; j++) {
-            cout << "[";
+        for (int j = 0; j < 15; j++) {
+            cout << "[ ";
             cout << arr[i][j];
-            cout << "]";
+            cout << " ]";
         }
         cout << endl;
     }
@@ -77,9 +98,37 @@ int convCharToNum(char input) {
         case 'h':
             letterNum = 7;
             break;
+        case 'I':
+        case 'i':
+            letterNum = 8;
+            break;
+        case 'J':
+        case 'j':
+            letterNum = 9;
+            break;
+        case 'K':
+        case 'k':
+            letterNum = 10;
+            break;
+        case 'L':
+        case 'l':
+            letterNum = 11;
+            break;
+        case 'M':
+        case 'm':
+            letterNum = 12;
+            break;
+        case 'N':
+        case 'n':
+            letterNum = 13;
+            break;
+        case 'O':
+        case 'o':
+            letterNum = 14;
+            break;
         default:
             cout << "Error, not valid input\n";
-            letterNum = 10;
+            letterNum = 20;
     }
     return letterNum;
 }
@@ -94,13 +143,13 @@ bool isNumber(int in) {
 }
 
 // Called at start of game to fill the arrays for each player
-void chooseCells(char arr[8][8]) {
+void chooseCells(char arr[15][15]) {
     char letter, yn;
-    int number = 10, letterNum = 10;
+    int number = 20, letterNum = 20;
     while (true) {
         for (int i = 0; i < 8; i++) {
-            letterNum = 10;
-            while (letterNum == 10) {
+            letterNum = 20;
+            while (letterNum == 20) {
                 cout << "Enter cell " << (i + 1) << " (ie. H8): ";
                 cin >> letter >> number;
                 letterNum = convCharToNum(letter);
@@ -130,7 +179,7 @@ void chooseCells(char arr[8][8]) {
 }
 
 // Used for each player turn
-void pickCell(char arr[8][8]) {
+void pickCell(char arr[15][15]) {
     char letter;
     int number, letterNum, loop = 0, loop1 = 0;
     while (loop1 == 0) {
@@ -155,18 +204,9 @@ void pickCell(char arr[8][8]) {
 }
 
 // Checking for win, true means array is empty
-bool checkArray(char arr[8][8]) {
+bool checkArray(char arr[15][15]) {
     int check = 0;
-    for (int i = 0; i < 8 * 8; ++i) {
-        // Previously for debugging
-        // if (arr[0][i] == 0) {
-        //     cout << "0";
-        // } else if (arr[0][i] == 'P') {
-        //     cout << "P";
-        // } else {
-        //     cout << "x";
-        //     check = 1;
-        // }
+    for (int i = 0; i < 15 * 15; ++i) {
         if (arr[0][i] == 'x') {
             check = 1;
         }
@@ -182,21 +222,22 @@ bool checkArray(char arr[8][8]) {
 }
 
 int main() {
-    char p1[8][8] = {{0}};
-    char p2[8][8] = {{0}};
-    char emptyBoard[8][8] = {{0}};
+    char p1[15][15] = {{0}};
+    char p2[15][15] = {{0}};
+    char emptyBoard[15][15] = {{0}};
     bool check = false;
     char empty;
 
     system("clear");
-    cout << "Player 1, choose your cells\n";
+    cout << "Player 1, choose your cells (A1 to O15)\n";
     chooseCells(p1);
-    cout << "Player 2, choose your cells\n";
+    cout << "Player 2, choose your cells (A1 to O15)\n";
     chooseCells(p2);
 
     while (true) {
         system("clear");
-        cout << "Player 1's turn!\n";
+        cout << "Player 1's turn!\nHere's your current board:";
+        printArr(p1);
         pickCell(p2);
         // Check for win condition
         check = checkArray(p2);
@@ -207,7 +248,8 @@ int main() {
         check = false;
 
         system("clear");
-        cout << "Player 2's turn!\n";
+        cout << "Player 2's turn!\nHere's your current board:";
+        printArr(p2);
         pickCell(p1);
         // Check for win condition
         check = checkArray(p1);
