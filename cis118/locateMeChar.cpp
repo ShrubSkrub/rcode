@@ -1,10 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int p1CellCount = 0;
-int p2CellCount = 0;
-
-void printArr(int arr[8][8]) {
+// Function is used only to print array contents
+void printArr(char arr[8][8]) {
     cout << "\n[ ][1][2][3][4][5][6][7][8]\n";
     for (int i = 0; i < 8; i++) {
         switch (i) {
@@ -42,6 +40,8 @@ void printArr(int arr[8][8]) {
     }
 }
 
+// Function is used in other functions to convert
+// user input from letters to numbers
 int convCharToNum(char input) {
     int letterNum;
     switch (input) {
@@ -84,6 +84,7 @@ int convCharToNum(char input) {
     return letterNum;
 }
 
+// Simply used to check if the user actually entered a number
 bool isNumber(int in) {
     if (in < 0) {
         return true;
@@ -92,7 +93,8 @@ bool isNumber(int in) {
     }
 }
 
-void chooseCells(int arr[8][8]) {
+// Called at start of game to fill the arrays
+void chooseCells(char arr[8][8]) {
     char letter, yn;
     int number = 10, letterNum = 10;
     while (true) {
@@ -103,7 +105,7 @@ void chooseCells(int arr[8][8]) {
                 cin >> letter >> number;
                 letterNum = convCharToNum(letter);
             }
-            arr[letterNum][number - 1] = 1;
+            arr[letterNum][number - 1] = 'x';
         }
         printArr(arr);
         cout << "Is this correct? (y or n): ";
@@ -126,7 +128,8 @@ void chooseCells(int arr[8][8]) {
     system("clear");
 }
 
-void pickCell(int arr[8][8]) {
+// Used for each player turn
+void pickCell(char arr[8][8]) {
     char letter;
     int number, letterNum, loop = 0, loop1 = 0;
     while (loop1 == 0) {
@@ -134,10 +137,10 @@ void pickCell(int arr[8][8]) {
             cout << "Enter cell (ie. H8): ";
             cin >> letter >> number;
             letterNum = convCharToNum(letter);
-            if (arr[letterNum][number - 1] == 1) {
+            if (arr[letterNum][number - 1] == 'x') {
                 cout << "You guessed correctly, go again!\n";
-                arr[letterNum][number - 1] = 0;
-            } else if (arr[letterNum][number - 1] == 2) {
+                arr[letterNum][number - 1] = 'P';
+            } else if (arr[letterNum][number - 1] == 'P') {
                 cout << "You already guessed this one.\n";
                 loop = 1;
                 loop1 = 1;
@@ -151,13 +154,19 @@ void pickCell(int arr[8][8]) {
 }
 
 // Checking for win, true means array is empty
-bool checkArray(int arr[8][8]) {
+bool checkArray(char arr[8][8]) {
     int check = 0;
     for (int i = 0; i < 8 * 8; ++i) {
-        if (arr[0][i] == 0) {
-            // cout << "0";
-        } else {
-            // cout << "1";
+        // Previously for debugging
+        // if (arr[0][i] == 0) {
+        //     cout << "0";
+        // } else if (arr[0][i] == 'P') {
+        //     cout << "P";
+        // } else {
+        //     cout << "x";
+        //     check = 1;
+        // }
+        if (arr[0][i] == 'x') {
             check = 1;
         }
     }
@@ -172,9 +181,9 @@ bool checkArray(int arr[8][8]) {
 }
 
 int main() {
-    int p1[8][8] = {{0}};
-    int p2[8][8] = {{0}};
-    int emptyBoard[8][8] = {{0}};
+    char p1[8][8] = {{0}};
+    char p2[8][8] = {{0}};
+    char emptyBoard[8][8] = {{0}};
     bool check = false;
     char empty;
 
@@ -185,9 +194,9 @@ int main() {
     chooseCells(p2);
 
     while (true) {
+        system("clear");
         cout << "Player 1's turn!\n";
         pickCell(p2);
-
         // Check for win condition
         check = checkArray(p2);
         if (check) {
@@ -196,9 +205,9 @@ int main() {
         }
         check = false;
 
+        system("clear");
         cout << "Player 2's turn!\n";
         pickCell(p1);
-
         // Check for win condition
         check = checkArray(p1);
         if (check) {
