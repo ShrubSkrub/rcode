@@ -6,8 +6,8 @@
     >     * 8.3.2: 96-98f
     > * F/Math/Problem Set
     * F/Chem/PT 5.2 Water
-    * U/CIS /FINAL PROJECT | !!!
-    * U/CIS /Discussion | 2
+    > * U/CIS /FINAL PROJECT | !!!
+    > * U/CIS /Discussion | 2
     > * U/CIS /Assignment
     > * U/CIS /Quiz
 -21-21-
