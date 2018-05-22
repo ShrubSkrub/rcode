@@ -7,12 +7,12 @@
 // Place the corrected code and screen prints of its successful execution
 // in an MS Word Document and upload here.
 
-#include "stdafx.h"  // Visual Studios PC only
+// #include "stdafx.h"  // Visual Studios PC only
 #include <iostream>
 using namespace std;
 #include "string"
 
-int myFactorial( intt integer)
+int myFactorial( int integer)  // Changed intt to int
 {
 if( integer == 1)
      return 1;
@@ -24,13 +24,13 @@ else
 
 int main() {
 
-    int j == 10;
+    int j = 10;  // Changed == to =
     string myName = "NoName";
     cout << "Output sentence" << endl;
     cout << 120 << endl;
-    cout << j << endl;           // prints out the value of x
+    cout << j << endl;           // prints out the value of j  // Changed x to j
 
-    fi (( j == 0 ) || ( myName == "NoName" ))
+    if (( j == 0 ) || ( myName == "NoName" ))  // Changed fi to if
     {
         cout << "J equals 0 OR myName equals NoName" << endl;
     }
@@ -44,7 +44,7 @@ int main() {
         cout << "Please enter an integer value: ";
         cin >> j;
         cout << "The value you entered is " << j;
-        cout << " and its double is " << i*2 << ".\n";   // print out double value
+        cout << " and its double is " << j*2 << ".\n";   // Changed i to j
     }
 
     cout << "Enter your first and last name: ";
@@ -52,7 +52,7 @@ int main() {
     cout << "My first and last name is " << myName << endl;
 
     cout << "The factorial of 15 is " << myFactorial(15)<< endl;
-    system("pause");
+    // system("pause");  // Not needed on linux
 
     return 0;
 }
