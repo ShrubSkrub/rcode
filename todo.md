@@ -3,30 +3,31 @@
     > * F/Math/Classwork
     > * F/Math/Problem Set
 -21-21-
-    * 4/!/Math/Finish Make-up CC Quiz
-    > * 0/W/?   /Sign up for Concurrent Enrollment
+    * !/Math/Finish Make-up CC Quiz
+    > * W/?   /Sign up for Concurrent Enrollment
         > * Summer
         > * Fall
         > * d.tech Transfer form
     > * W/Engl/Ask Owen for 20die pic
         * H/Engl/Get 20d pic of Owen
-    o 3/H/Chem/Lab Work for PT 5.2
-        - Don't forget water!
-    o 6/H/PClb/Lab 4 or 5 - Check lab coat
-        - Lab 4, not 5
+    > o H/Chem/Lab Work for PT 5.2
+        > - Don't forget water!
+    > o H/PClb/Lab 4 or 5 - Check lab coat
+        > - Lab 4, not 5
     - F/Day /HALF DAY
-    * 2/F/Engl/GoGuardian Revisions
-    * 3/F/Chem/PT 5.2 Water
-    * 6/F/Chem/PT 6.1 Thermal Energy
-    * 3/F/WorH/CCs
-    * 1/F/WorH/PT 8.1
+    > * F/Engl/GoGuardian Revisions
+        * Get pic of GoGuardian
+    * F/Chem/PT 5.2 Water
+    > * F/WorH/CCs
+    > * 1/F/WorH/PT 8.1
         > * L2 Paragraph
         > * L3
-        * L4 Notes/Paragraph
+        > * L4 Paragraph
     * 4/F/Math/Classwork - 8.3.2
     * 5/F/Math/W14 Problem Set
         * 8.3.3: 115, 116, 117, 123, 125, 126
         * 8 Closure: 158, 159, 160, 161, 164, 165, 166
+    * F/Chem/PT 6.1 Thermal Energy
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
     * CONCURRENT ENROLLMENT
@@ -61,11 +62,6 @@
     * Catalog all needed parts for rice
     * Find dot grid notebook
     * Create vim syntax file for todo
+    * Create cli link shortener
     - fgcsk0@gmail.com
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-# Lab
-    1 Engl GoGuardian
-    2 Chem PT 5.2
-    3 Chem PT 5.2
-    4 Club
-    5 WorH
