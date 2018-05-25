@@ -3,7 +3,6 @@
     > * F/Math/Classwork
     > * F/Math/Problem Set
 -21-21-
-    * !/Math/Finish Make-up CC Quiz
     > * W/?   /Sign up for Concurrent Enrollment
         > * Summer
         > * Fall
@@ -14,23 +13,24 @@
         > - Don't forget water!
     > o H/PClb/Lab 4 or 5 - Check lab coat
         > - Lab 4, not 5
-    - F/Day /HALF DAY
     > * F/Engl/GoGuardian Revisions
         * Get pic of GoGuardian
-    * F/Chem/PT 5.2 Water
     > * F/WorH/CCs
     > * 1/F/WorH/PT 8.1
         > * L2 Paragraph
         > * L3
         > * L4 Paragraph
-    * 4/F/Math/Classwork - 8.3.2
-    * 5/F/Math/W14 Problem Set
-        * 8.3.3: 115, 116, 117, 123, 125, 126
-        * 8 Closure: 158, 159, 160, 161, 164, 165, 166
+    - F/Day /HALF DAY
+    * F/Chem/PT 5.2 Water
+    > * !/Math/Finish Make-up CC Quiz
+    > * F/Math/Classwork - 8.3.2
+    > * F/Math/W14 Problem Set
+        > * 8.3.3: 115, 116, 117, 123, 125, 126
+        > * 8 Closure: 158, 159, 160, 161, 164, 165, 166
     * F/Chem/PT 6.1 Thermal Energy
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
-    * CONCURRENT ENROLLMENT
+    > * CONCURRENT ENROLLMENT
         > * Summer
             - https://goo.gl/7yNfPZ - Form
             - https://goo.gl/WT4oev - Python Class
