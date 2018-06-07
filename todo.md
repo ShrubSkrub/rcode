@@ -1,16 +1,10 @@
 # Homework
--21-21-
-    > * W/Engl/Ask Owen for 20die pic
-        > * F/Engl/Get 20d pic of Owen
-        > * F/Engl/Get organization pic
-    > * F/Chem/PT 5.2 Water
-    > * F/Chem/PT 6.1 Thermal Energy
--22-01-
-    > * T/Engl/Create Ch13 Disscussion questions - 9am
-    * F/WorH/PT 8.1 Revisions-ish - Add more detail
+-23-04-
+    * T/Chem/SS Calorimeter
+    * F/Math/Classwork
+    - F/Half Day!
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
-    - Siempo?
     > * CONCURRENT ENROLLMENT
         > * Summer
             - https://goo.gl/7yNfPZ - Form
@@ -37,7 +31,6 @@
             - mtotten@dtechhs.org
         * Ask about concurrent enrollment not at CSM
         - G01064811
-    * Send PCerra Ubuntu Repositories
 
     * Hacker One Class
     * Catalog all needed parts for rice
