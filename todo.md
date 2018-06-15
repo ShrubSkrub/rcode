@@ -1,4 +1,7 @@
 # Homework
+CIS
+    * U/Discuss - Introduce | 2
+    * U/Discuss - 1 Statement Type | 2
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
     > * CONCURRENT ENROLLMENT
