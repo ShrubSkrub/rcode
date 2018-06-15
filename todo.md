@@ -1,7 +1,13 @@
 # Homework
 CIS
     * U/Discuss - Introduce | 2
-    * U/Discuss - 1 Statement Type | 2
+    * U/Discuss - 1 Statement Type | 3
+    * U/Assignment 1
+        > 1 Write 3p 5q end o IDE less
+        > 2 Answer 10q end o Programming less
+        3 Write 3p 10q end o Declaration and Assignment less
+        4 Write 3p 10q end o Function less
+        5 Answer addtional 7q
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
     > * CONCURRENT ENROLLMENT
