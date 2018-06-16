@@ -5,7 +5,7 @@ CIS
     * U/Assignment 1
         > 1 Write 3p 5q end o IDE less
         > 2 Answer 10q end o Programming less
-        3 Write 3p 10q end o Declaration and Assignment less
+        > 3 Write 3p 10q end o Declaration and Assignment less
         4 Write 3p 10q end o Function less
         5 Answer addtional 7q
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
