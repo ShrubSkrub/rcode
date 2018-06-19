@@ -1,4 +1,22 @@
 # Homework
+CIS
+    * U/Discussion - Crow  | 3
+    * U/Discussion - Class | 3
+    * U/Assignment
+        > * Ans Crow q
+        * Ans 10q
+        * Code 10
+            1 Bucky Classes
+            2 Bucky Variable
+            3 Bucky Constructor
+            4 Study Code
+            5 Study Code
+            6 Pick Color
+            7 Factorial Complete
+            8 Rectangle Complete
+            9 Box Complete
+            10 Circle Class
+    * U/Quiz
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
     > * CONCURRENT ENROLLMENT
