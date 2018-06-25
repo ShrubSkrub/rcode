@@ -2,7 +2,7 @@
 
 // Sample Class - Print and Study, RUN the code...
 
-#include "stdafx.h" // PC only using Visual Studios.. else delete line..
+// #include "stdafx.h" // PC only using Visual Studios.. else delete line..
 
 #include <iostream>
 
@@ -48,7 +48,7 @@ int main()
 
     cout << "setWeight Function/Method Set Weight: " << ThingOne.getWeight() << endl;
 
-    system("PAUSE");  // MAC User comment this line out.
+    // system("PAUSE");  // MAC User comment this line out.
 
     return 0;
 

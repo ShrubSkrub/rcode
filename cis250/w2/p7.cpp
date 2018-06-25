@@ -1,20 +1,19 @@
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
-int factorial(int);
+class factorialClass {
+    public:
+    int FactNum(int number) {
+        int temp;
+        if(number <= 1) return 1;
+        temp = number * FactNum(number - 1);
+        return temp;
+    }
+};
 
-int main(void) {
-	int number;
-		cout << "Please enter a positive integer: ";
-	cin >> number;
-	if (number < 0)
-		cout << "That is not a positive integer.\n";
-	else
-		cout << number << " factorial is: " << factorial(number) << endl;
-}
-
-int factorial(int number) {
-	int temp;
-	if(number <= 1) return 1;
-	temp = number * factorial(number - 1);
-	return temp;
+int main() {
+    factorialClass FactialInstance;
+    cout << "The factorial of 3 is: " << FactialInstance.FactNum(3) << endl;
+    cout << "The factorial of 5 is: " << FactialInstance.FactNum(5) << endl;
+    cout << "The factorial of 7 is: " << FactialInstance.FactNum(7) << endl;
 }

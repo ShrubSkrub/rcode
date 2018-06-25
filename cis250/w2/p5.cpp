@@ -60,7 +60,7 @@ int main()
 
     cout << "setWeight Function/Method Set Weight: " << ThingTwo.getWeight() << endl;
 
-    system("PAUSE");  // MAC User comment this line out.
+    // system("PAUSE");  // MAC User comment this line out.
 
     return 0;
 

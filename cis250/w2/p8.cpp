@@ -5,20 +5,28 @@ using namespace std;
 class Rectangle {
     int width, height;
   public:
-    void set_values (int,int);
-    int area() {
-       int answer;
-       // complete this function so the code works 
-       return answer;
+    Rectangle() {
+        width = 0;
+        height = 0;
     }
     Rectangle(int w, int h) {  // parameterized constructor
        // complete this function so the code works
+        width = w;
+        height = h;
+    }
+    void set_values (int x, int y) {
+         // complete this function so the code works
+         width = x;
+         height = y;
+    }
+    int area() {
+       int answer;
+       // complete this function so the code works 
+       answer = width * height;
+       return answer;
     }
 };
 
-void Rectangle::set_values (int x, int y) {
-     // complete this function so the code works
-}
 
 int main () {  // Use this driver program
   // Use parameterized constructor to set values
