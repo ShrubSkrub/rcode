@@ -1,14 +1,14 @@
 # Homework
 CIS
-    * U/Discussion - Crow  | 3
-    * U/Discussion - Class | 3
+    * U/Discussion - Crow  | 2
+    * U/Discussion - Class | 2
     * U/Assignment
         > * Ans Crow q
-        * Ans 10q
+        > * Ans 10q
         * Code 10
-            1 Bucky Classes
-            2 Bucky Variable
-            3 Bucky Constructor
+            > 1 Bucky Classes
+            > 2 Bucky Variable
+            > 3 Bucky Constructor
             4 Study Code
             5 Study Code
             6 Pick Color
