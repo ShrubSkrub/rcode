@@ -1,11 +1,11 @@
 # Homework
 CIS
-    * U/Discussion - Crow  | 2
-    * U/Discussion - Class | 2
-    * U/Assignment
+    > * U/Discussion - Crow  | 0
+    > * U/Discussion - Class | 0
+    > * U/Assignment
         > * Ans Crow q
         > * Ans 10q
-        * Code 10
+        > * Code 10
             > 1 Bucky Classes
             > 2 Bucky Variable
             > 3 Bucky Constructor
@@ -16,7 +16,7 @@ CIS
             > 8 Rectangle Complete
             > 9 Box Complete
             > 10 Circle Class
-    * U/Quiz
+    > * U/Quiz
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
     > * CONCURRENT ENROLLMENT
