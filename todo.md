@@ -1,22 +1,14 @@
 # Homework
 CIS
-    > * U/Discussion - Crow  | 0
-    > * U/Discussion - Class | 0
-    > * U/Assignment
-        > * Ans Crow q
-        > * Ans 10q
-        > * Code 10
-            > 1 Bucky Classes
-            > 2 Bucky Variable
-            > 3 Bucky Constructor
-            > 4 Study Code
-            > 5 Study Code
-            > 6 Pick Color
-            > 7 Factorial Complete
-            > 8 Rectangle Complete
-            > 9 Box Complete
-            > 10 Circle Class
-    > * U/Quiz
+    * U/Discussion - Imp | 1
+    * U/Discussion - Inh | 2
+    * U/Assignment
+        > 1 Week3YourNamePart1VideosSummarySep
+        > 2 Week3YourNamePart2VideosSummaryInher
+        > 3 Week3YourNameProg3ModProg
+        > 4 Week3YourNameProg4VideoSummaryInher
+        > 5 Week3YourNameProg5Inherit
+    * U/Quiz
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
     > * CONCURRENT ENROLLMENT
