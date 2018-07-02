@@ -1,14 +1,14 @@
 # Homework
 CIS
-    * U/Discussion - Imp | 1
-    * U/Discussion - Inh | 2
-    * U/Assignment
+    > * U/Discussion - Imp | 0
+    > * U/Discussion - Inh | 0
+    > * U/Assignment
         > 1 Week3YourNamePart1VideosSummarySep
         > 2 Week3YourNamePart2VideosSummaryInher
         > 3 Week3YourNameProg3ModProg
         > 4 Week3YourNameProg4VideoSummaryInher
         > 5 Week3YourNameProg5Inherit
-    * U/Quiz
+    > * U/Quiz
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # To Do
     > * CONCURRENT ENROLLMENT
