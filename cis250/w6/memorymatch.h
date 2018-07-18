@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <string>
 using namespace std;
 // Above is temporarily there so Syntastic doesn't spew errors...
 
@@ -14,21 +15,27 @@ class MemoryMatchGame{
         string face = "E";  // Theme
         int diff = 0;  // Difficulty
         int time = 0;  // Game speed
-        // int *answerArr;
-        // int *displayArr;
+        string *answerArr;
+        int *displayArr;
         int input;  // Temp for all needed cin
+        int arrSize = 0;
     public:
         MemoryMatchGame(){
+            answerArr = new string[8][8];
         }
         void difficulty(){
             cout << "Choose difficulty:\n4 x 4 grid (Easy)\n6 x 6 grid (Moderate)\n";
             cout << "8 x 8 grid (Difficult)\n";
             cin >> input;
             // Add check for valid input
-            string answerArr[input][input] = { };
-            string displayArr[input][input] = { face };
+            // string answerArr[input][input] = { };
+            // string displayArr[input][input] = { face };
             // TODO Make dynamic array belonging to class
 
+            arrSize = input;
+        }
+        void dealCards(){
+            // Create array's size
             // Shuffle cards array
             for (int i = 0; i < 50; i++){
                 int r = rand() % 50;
@@ -37,11 +44,11 @@ class MemoryMatchGame{
                 cards[r] = temp;
             }
 
-            // Deal cards into answer array
+            // Deal CARDS INTo answer array
             int cardCount = 0;
             for (int i = 0; i < input; i++){
                 for (int j = 0; j < input; j++){
-                    answerArr[i][j] = cards[cardCount];
+                    // answerArr[i][j] = cards[cardCount];
                     cardCount++;
                 }
             }
