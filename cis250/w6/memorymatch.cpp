@@ -72,14 +72,20 @@ class MemoryMatchGame{
                 cards[r] = temp;
             }
 
-            // Deal CARDS into answer array
+            // Deal CARDS into temp array
+            // Needs cards to be input twice
             int cardCount = 0;
-            for (int i = 0; i < input; i++){
-                for (int j = 0; j < input; j++){
-                    // answerArr[i][j] = cards[cardCount];
+            string tempArr[(input * 2)][(input * 2)];
+            for (int i = 0; i < (input * 2); i++){
+                for (int j = 0; j < (input * 2); j++){
+                    tempArr[i][j] = cards[cardCount];
+                    cardCount++;
+                    tempArr[i][j++] = cards[cardCount];
                     cardCount++;
                 }
             }
+
+            // Deal CARDS into answer array
         }
         void speed(){
             cout << "Choose time interval:\n6 secs (Easy)\n4 secs (Moderate)\n";
@@ -100,6 +106,9 @@ class MemoryMatchGame{
                 }
             }
             time = input;
+        }
+
+        void winCheck(){
         }
         // void display(){
         // }
@@ -281,7 +290,7 @@ class MemoryMatchGame{
             }
         }
 
-        void chooseCells(int arr[8][8]) {
+        void chooseCells() {
             char letter, yn;
             int number = 10, letterNum = 10;
             while (true) {
@@ -292,7 +301,7 @@ class MemoryMatchGame{
                         cin >> letter >> number;
                         letterNum = convCharToNum(letter);
                     }
-                    arr[letterNum][number - 1] = 1;
+                    // arr[letterNum][number - 1] = 1;
                 }
                 printArr();
                 cout << "Is this correct? (y or n): ";
@@ -315,7 +324,7 @@ class MemoryMatchGame{
             system("clear");
         }
 
-        void pickCell(int arr[8][8]) {
+        void pickCell() {
             char letter;
             int number, letterNum, loop = 0, loop1 = 0;
             while (loop1 == 0) {
@@ -323,18 +332,18 @@ class MemoryMatchGame{
                     cout << "Enter cell (ie. H8): ";
                     cin >> letter >> number;
                     letterNum = convCharToNum(letter);
-                    if (arr[letterNum][number - 1] == 1) {
-                        cout << "You guessed correctly, go again!\n";
-                        arr[letterNum][number - 1] = 0;
-                    } else if (arr[letterNum][number - 1] == 2) {
-                        cout << "You already guessed this one.\n";
-                        loop = 1;
-                        loop1 = 1;
-                    } else {
-                        cout << "You guessed incorrectly...\n";
-                        loop = 1;
-                        loop1 = 1;
-                    }
+                    // if (arr[letterNum][number - 1] == 1) {
+                    //     cout << "You guessed correctly, go again!\n";
+                    //     arr[letterNum][number - 1] = 0;
+                    // } else if (arr[letterNum][number - 1] == 2) {
+                    //     cout << "You already guessed this one.\n";
+                    //     loop = 1;
+                    //     loop1 = 1;
+                    // } else {
+                    //     cout << "You guessed incorrectly...\n";
+                    //     loop = 1;
+                    //     loop1 = 1;
+                    // }
                 }
             }
         }
