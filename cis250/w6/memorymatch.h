@@ -1,10 +1,3 @@
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
-#include <string>
-using namespace std;
-// Above is temporarily there so Syntastic doesn't spew errors...
-
 class MemoryMatchGame{
     protected:
         string cards[50] = {"H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne",
