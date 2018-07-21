@@ -2,7 +2,6 @@
 using namespace std;
 #include <string>
 // #include "memorymatch.h"
-
 #include <cstdlib>
 #include <ctime>
 #include <time.h>
@@ -26,8 +25,6 @@ class MemoryMatchGame{
         bool gameRunning = true;  // Used to keep game running, or stop it
         int pairs = 0;  // Tracks how many pairs have been found
     public:
-        MemoryMatchGame(){
-        }
         void difficulty(){
             cout << "Choose difficulty:\n4 x 4 grid (Easy)\n6 x 6 grid (Moderate)\n";
             cout << "8 x 8 grid (Difficult)\n    - Input 4, 6, or 8 -\n";
@@ -57,15 +54,11 @@ class MemoryMatchGame{
                 }
             }
             arrSize = input;
-
             // Fill arrays based on input from user
             for (int i = 0; i < input; i++){
-                cout << "i = " << i << endl;
                 for (int j = 0; j < input; j++){
-                    cout << "j = " << j << endl;
                     answerArr[i][j] = "  ";
                     displayArr[i][j] = "E ";
-                    cout << "displayArr[" << i << "][" << j << "] = " << displayArr[i][j] << endl;
                 }
             }
         }
@@ -75,57 +68,37 @@ class MemoryMatchGame{
             cout << "Shuffling cards array...\n";
             for (int i = 0; i < 50; i++){
                 int r = rand() % 50;
-                cout << "r = " << r << endl;
                 string temp = cards[i];
-                cout << "string temp = " << temp << endl;
                 cards[i] = cards[r];
                 cards[r] = temp;
-                cout << "cards[" << i << "] = " << cards[i] << endl;
-                cout << "cards[" << r << "] = " << cards[r] << endl;
-                cout << "temp = " << temp << endl;
             }
-
             // Deal CARDS into temp array
             // Cards need to be input twice
             cout << "Dealing pairs into tempArr..." << endl;
             int cardCount = 0;  // Kind of like the number of the card or INDEX?
-            // cout << "input = " << input << endl;
             string tempArr[(neededTerms * 2)];
 
             for (int i = 0; i < (neededTerms * 2); i++){
-                    // cout << "cardCount = " << cardCount << endl;
                 tempArr[i] = cards[cardCount];
-                    // cout << "tempArr[" << i << "] = " << tempArr[i] << endl;
-                // cardCount++;
-                    // cout << "cardCount = " << cardCount << endl;
                 i++;
                 tempArr[i] = cards[cardCount];
-                    // cout << "tempArr[" << i << "] = " << tempArr[i] << endl;
                 cardCount++;
             }
-
             // Shuffle temp array
             cout << "Shuffling temp array...\n";
-            for (int i = 0; i < (neededTerms * 2); i++){
-                int r = rand() % input;
-                cout << "r = " << r << endl;
-                string temp = tempArr[i];
-                cout << "string temp = " << temp << endl;
-                tempArr[i] = tempArr[r];
-                tempArr[r] = temp;
-                cout << "tempArr[" << i << "] = " << tempArr[i] << endl;
-                cout << "tempArr[" << r << "] = " << tempArr[r] << endl;
-                cout << "temp = " << temp << endl;
+            for (int x = 0; x < 3; x++){
+                for (int i = 0; i < (neededTerms * 2); i++){
+                    int r = rand() % input;
+                    string temp = tempArr[i];
+                    tempArr[i] = tempArr[r];
+                    tempArr[r] = temp;
+                }
             }
-
             // Deal CARDS into answer array
             cardCount = 0;
-            for (int i = 0; i < input; i++){
-                // cout << "i = " << i << endl;
-                for (int j = 0; j < input; j++){
-                    // cout << "j = " << j << endl;
+            for (int i = 0; i < arrSize; i++){
+                for (int j = 0; j < arrSize; j++){
                     answerArr[i][j] = tempArr[cardCount];
-                    cout << "answerArr[" << i << "][" << j << "] = " << answerArr[i][j] << endl;
                     cardCount++;
                 }
             }
@@ -151,19 +124,15 @@ class MemoryMatchGame{
             }
             gameSpeed = input;
         }
-
         void pickSquares(){
             system("clear");
             pairs = 0;
-            // cout << "Pairs = " << pairs << endl;
-            // cout << "neededTerms = " << neededTerms << endl;
             char letter, letter2;
             int number, letterNum, number2, letterNum2, loop = 0;
             string pick1, pick2;
             while (loop == 0) {
                 cout << "Pairs found: " << pairs << "/" << neededTerms << endl;
                 printArr();
-
                 // Select square 1
                 cout << "Enter first card (ie. H8): ";
                 cin >> letter >> number;
@@ -171,7 +140,6 @@ class MemoryMatchGame{
                 pick1 = answerArr[letterNum][number - 1];
                 displayArr[letterNum][number - 1] = answerArr[letterNum][number - 1];
                 printArr();
-
                 // Select square 2
                 cout << "Enter second card (ie. H8): ";
                 cin >> letter2 >> number2;
@@ -179,7 +147,6 @@ class MemoryMatchGame{
                 pick2 = answerArr[letterNum2][number2 - 1];
                 displayArr[letterNum2][number2 - 1] = answerArr[letterNum2][number2 - 1];
                 printArr();
-
                 // Check for match
                 if (pick1 == pick2) {
                     cout << "It's a match!\n";
@@ -208,24 +175,6 @@ class MemoryMatchGame{
                 system("clear");
             }
         }
-
-        void start(){
-            system("clear");
-            srand(time(0));
-            cout << rand() << endl;
-            cout << "Welcome to Memory Match!\n\n";
-            difficulty();
-            cout << "\n====================\n";
-            speed();
-            cout << "\n====================\n";
-            system("clear");
-            dealCards();
-            pickSquares();
-        }
-
-// ----------------------------------------------------------------------
-
-        // Old, possibly useful functions
         void printArr() {
             switch (arrSize) {
                 case 8:
@@ -323,7 +272,6 @@ class MemoryMatchGame{
                     break;
             }
         }
-
         int convCharToNum(char input) {
             int letterNum;
             switch (input) {
@@ -365,73 +313,19 @@ class MemoryMatchGame{
             }
             return letterNum;
         }
-
-        bool isNumber(int in) {
-            if (in < 0) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-
-        void chooseCells() {
-            char letter, yn;
-            int number = 10, letterNum = 10;
-            while (true) {
-                for (int i = 0; i < 8; i++) {
-                    letterNum = 10;
-                    while (letterNum == 10) {
-                        cout << "Enter cell " << (i + 1) << " (ie. H8): ";
-                        cin >> letter >> number;
-                        letterNum = convCharToNum(letter);
-                    }
-                    // arr[letterNum][number - 1] = 1;
-                }
-                printArr();
-                cout << "Is this correct? (y or n): ";
-                while (true) {
-                    cin >> yn;
-
-                    if (yn == 'y') {
-                        break;
-                    } else if (yn == 'n') {
-                        break;
-                    } else {
-                        cout << "Not y or n. Try again.\n";
-                    }
-                }
-                if (yn == 'y') {
-                    break;
-                }
-                system("clear");
-            }
+        void start(){
             system("clear");
+            srand(time(0));
+            cout << rand() << endl;
+            cout << "Welcome to Memory Match!\n\n";
+            difficulty();
+            cout << "\n====================\n";
+            speed();
+            cout << "\n====================\n";
+            system("clear");
+            dealCards();
+            pickSquares();
         }
-
-        void pickCell() {
-            char letter;
-            int number, letterNum, loop = 0, loop1 = 0;
-            while (loop1 == 0) {
-                while (loop == 0) {
-                    cout << "Enter cell (ie. H8): ";
-                    cin >> letter >> number;
-                    letterNum = convCharToNum(letter);
-                    // if (arr[letterNum][number - 1] == 1) {
-                    //     cout << "You guessed correctly, go again!\n";
-                    //     arr[letterNum][number - 1] = 0;
-                    // } else if (arr[letterNum][number - 1] == 2) {
-                    //     cout << "You already guessed this one.\n";
-                    //     loop = 1;
-                    //     loop1 = 1;
-                    // } else {
-                    //     cout << "You guessed incorrectly...\n";
-                    //     loop = 1;
-                    //     loop1 = 1;
-                    // }
-                }
-            }
-        }
-
 };
 
 int main(){
