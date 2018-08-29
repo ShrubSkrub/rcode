@@ -1,0 +1,19 @@
+touch text1
+vim text1
+head text1 
+tail text1
+cp text1 newtext1
+mv text1 changedtext1
+ls
+ls -l
+ls -h
+ls -lh
+wc changedtext1 
+chmod 444 changedtext1 
+echo > newfile
+ls -l
+chmod 755 newfile 
+ls -l
+chown isaacs newfile 
+chmod 777 newfile 
+rm newfile 

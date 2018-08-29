@@ -1,0 +1,34 @@
+who | wc
+who | sort
+who | sort -r
+who | sort | less
+exit
+touch newfile
+echo here > newfile
+cat > friends
+vi
+nano
+ls
+cat friends nanofile newfile simplefile 
+ls -l
+la
+la -l
+wc newfile 
+cat friends
+who > who_out
+ls
+cat > beginning
+cat who_out 
+cat > beginning
+cat >> beginning
+cat beginning who_out
+cat beginning who_out > who_report
+cat >> who_report 
+head /etc/passwd
+tail /etc/passwd
+file /etc/passwd
+less /etc/passwd
+echo date > datefile
+bash datefile 
+chmod a+x datefile 
+./datefile 
