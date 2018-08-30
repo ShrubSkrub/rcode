@@ -1,10 +1,10 @@
 INTRODUCTION TO THE UNIX/Linux OPERATING SYSTEM
-Lab 2: SIMPLE FILE COMMANDS 
+Lab 2: SIMPLE FILE COMMANDS
 
 
 Show what command(s) you used to do each action below.
 
-You can turn this lab in on paper or by mail or by attaching it to the "assignments" tab (in "Homework for week 2"). What you need to do is say what commands you used to find the answer to each question. You do NOT have to turn in the history or script for this lab. There is an on-line copy of this lab in my direcory: 
+You can turn this lab in on paper or by mail or by attaching it to the "assignments" tab (in "Homework for week 2"). What you need to do is say what commands you used to find the answer to each question. You do NOT have to turn in the history or script for this lab. There is an on-line copy of this lab in my direcory:
 ~isaacs/class/unix.part1/lab2 -- the easiest thing to do might be to either edit a copy of that, or print it out and write the answers.
 
 
@@ -15,11 +15,11 @@ touch text1
 with at least a couple of lines of text.
 vim text1
 
-3. Close the file. 
+3. Close the file.
 :wq
 
-4. Browse the file. Look at the beginning of the file; look at the end. 
-head text1 
+4. Browse the file. Look at the beginning of the file; look at the end.
+head text1
 tail text1
 
 5. Copy the file "text1" to a new file.
@@ -42,23 +42,23 @@ wc changedtext1
 
 11. Change the permissions on the file so that everyone can read it, and
 no one (not even the owner) can write it.
-chmod 444 changedtext1 
+chmod 444 changedtext1
 
 12. Make a new file using the "echo" command.
 echo > newfile
 
 13.  Make the file you just made executable (but not writable) by everybody.
-chmod 755 newfile 
+chmod 755 newfile
 
-14. Try to change the owner to someone else: for instance, make "isaacs" 
+14. Try to change the owner to someone else: for instance, make "isaacs"
 the owner. (It should fail -- you can only change owner if you
 are the superuser.)
-chown isaacs newfile 
+chown isaacs newfile
 
-Change the permissions of the file. 
-chmod 777 newfile 
+Change the permissions of the file.
+chmod 777 newfile
 
 Delete the file (use "rm" command.)
-rm newfile 
+rm newfile
 
 Last modified: June 17, 2015
