@@ -1,0 +1,65 @@
+1. Using the sort command as a filter in a pipeline, rewrite the following commands:
+
+sort list > temp
+lpr temp
+rm temp
+
+(You shouldn't need a temporary file.)
+
+sort list | lpr
+
+2. Assume that the following files are in your current working directory:
+
+intro notesb ref2 section1 section3 section4b
+notesa ref1 ref3 section2 section4a sentrev
+
+Give commands for each of the following, using wildcards to express filenames. Treat it as a puzzle, and try to use as few characters as possible.
+
+a. List all files that begin with "section".
+echo section*
+
+b. List the section1, section2 and section3 files only.
+echo section[123]
+
+c. List the intro file only.
+echo i*
+
+d. List the section1, section3, ref1 and ref3 files.
+echo [sr]*[13]
+
+3. Use the online documentation ("man -k" or "apropos" to find which commands to use, and the "man" command or "info" command" to find what flags to use with them), give the command and flags which will:
+
+a. Output the number of lines in the standard input that contain the word "a" or "A". (Note that it should be used as a word, not just a letter in a word.)
+command | grep -i a | wc -l
+
+b. Output only the names of the files in the working directory that contain the pattern "$(".
+ls | grep '$('
+
+c. List the files in the working directory in their reverse alphabetical order.
+ls | sort -r
+
+d. Send a list of files in the working directory to the printer, sorted by size.
+ls -S | lpr
+
+4. Give the command to
+
+a. Redirect the standard output from a sort command into a file named "phone_list". Assume that the input file is named "numbers".
+sort numbers > phone_list
+
+b. Translate all occurrences of the characters "[" and "{" to the character "(" and all occurrences of the characters "]" and "}" to the character ")" in the file permdemos.c. (Look at the "tr" man page.)
+echo permdemos.c | tr '[' '(' | tr '{' '(' | tr ']' ')' | tr '}' ')'
+
+c. Create a file named "book" that contains the contents of two other files, called "part1" and "part2". (Don't forget wildcards.)
+cat part1 part2 > book
+
+5. Explain the following error message. What filenames would a subsequent "ls" display?
+
+$ ls
+
+abc abd abe abf abg abh
+
+$ rm abc ab*
+
+rm: Cannot remove 'abc': No such file or directory
+
+ls would display nothing.
