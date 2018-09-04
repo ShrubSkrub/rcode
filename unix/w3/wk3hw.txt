@@ -5,18 +5,29 @@ Do lab 3.
 Answer the following exercises: Chapter 5 exercises(From A Practical Guide to ...Linux", by Mark Sobell}:
 
 1. Which commands can you use to determine who is logged in on a specific terminal?
+who
+finger
 
 2. What happens when you give the following commands if the file named done already exists?
        cp to_do done
        mv to_do done
+cp copies the contents of to_do to done.
+mv overwrwites done with to_do.
 
 3. How can you find the phone number for Ace Electronics in a file named "phone" that contains a list of names and phone numbers? Which command can you use to display the entire file in alphabetical order? How can you remove adjacent duplicate lines from the file? How can you remove all duplicates?
+grep "Ace Electronics" phone
+sort phone
+sort phone | uniq
 
 4. How can you find out which utilities are available on your system for editing files? Which utilities are available for editing on your ssytem?
+man -k edit
 
 5. Experiment with the "file" command with names of commands in /usr/bin. How many different types of files are there?
+There are an almost unlimited number of different types of files.
 
 6. Which command can you use to look at the first few lines of a file named "status.report"? Which command can you use to look at the end of the file?
+head status.report
+tail status.report
 
 7. Try giving these two commands:
 
@@ -25,3 +36,4 @@ Answer the following exercises: Chapter 5 exercises(From A Practical Guide to ..
          cat echo
 
      Explain the difference between them.
+echo simply returns the input.  cat fails because there is no file named echo.
