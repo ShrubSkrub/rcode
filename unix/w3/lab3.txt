@@ -1,45 +1,72 @@
 Lab3: FILE & DIRECTORY LAB Try to do these with a minimum of changing directories (except when told to), and using wild cards and ".." when appropriate. Use abbreviations when you can, and use relative (rather than absolute) paths. Be a lazy typist!
 
 0. Create a file "friends", with some names in it. If you have already done this in Lab 2, you can use that one.
+vim friends
 
 1. Make sure you are in your home directory.
+cd
 
 2. Make a directory "class".
+mkdir class
 
 3. Confirm this directory exists now.
+ls
 
 4. Copy the file "friends" (that you just created or found) to a new file in the "class" subdirectory.
+cp friends class
 
 5. Go to that subdirectory (class).
+cd class
 
 6. Confirm that the file exists.
+ls
 
 7. Rename that file to "friends2".
+mv friends friends2
 
 8. While still in "class", copy who_report from your home directory to class.
+cp ~/who_report .
 
 9. Go back to your home directory.
+cd
 
 10. Move several files from here to the subdirectory class.
+mv [a-c]* class
 
 11. Move all the files in class back to the parent directory.
+mv class/* .
 
 12. Create a new file in your directory (your choice of names), containing: - your real name - your account name - when your ".bash_profile" file was last modified - how long the file "/etc/passwd" file is - the permissions of the "friends" file (Can you do this without actually typing all the information, by just redirecting the output of various commands?)
+finger > newfile
+who am i >> newfile
+ls -l .bash_profile >> newfile
+wc /etc/passwd >> newfile
+ls -l friends >> newfile
 
 13. Print the file you just created, with page number and date. (Since you can't actually print from newton right now, just save the output.)
+pr newfile | lpr
+pr newfile > savedoutput
 
 14. Make a copy of the file you created, but call the copy "foobar".
+cp newfile foobar
 
 15. Make a new file and put all the commands you ran in #12 in it. That is, in the file put the commands that would create another new file (different name from what you used in #12) with the same information in it.
+vim commands12
 
 16. Change the permissions of the new file you just made (in #15) so anyone can write it, and anyone in your group (but no one else) can execute it. Notice that means you can't execute it. Also make sure it is readable by everybody.
+chmod 732 foobar
 
 17. Now try to execute the new file, by typing "./" in front of the file name. It should fail (if you set the permissions as instructed). So try by typing:               bash <filename>            (where "filename" is the name you gave it)
+./commands12
+bash commands12
 
 Put the name of the file you created as part of the commands in number 19, that you turn in.
 
 18. Look at the first few lines of your files, using wild cards ('*', '?'). (Don't forget a pager, if you have a lot of output.) Then save those lines in a new file, and try to print it. (Notice whether the first lines of the new file you just created are in the listing.) Make sure you only print 2 or 3 lines from each file! (You may have to send the file to your local computer to print, it can't be printed directly from the server.)
+head *
+head * > newfile2
+cat newfile2 | lpr
 
-19 Write down what commands you used for each of the questions and turn it in with the output you printed for Questions 13 & 18. Alternatively, you can email me the output and commands, using the copy of Lab3 in ~isaacs/class/cis312. And still another way to submit it is to upload the file or cut-and-paste the contents into the Week 3 homework page.
+19. Write down what commands you used for each of the questions and turn it in with the output you printed for Questions 13 & 18. Alternatively, you can email me the output and commands, using the copy of Lab3 in ~isaacs/class/cis312. And still another way to submit it is to upload the file or cut-and-paste the contents into the Week 3 homework page.
 
 Last modified: August 22, 2017
