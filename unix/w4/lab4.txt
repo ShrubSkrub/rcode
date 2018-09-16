@@ -1,0 +1,83 @@
+Lab4: DIRECTORY STRUCTURE LAB
+
+1. Set up a subdirectory structure as follows (assuming "your-account" is   whichever account you are logged in as):
+
+              your-account
+
+                   /    \
+
+                  /       \
+
+             class    baby2
+
+                |
+
+                |
+
+         underclass
+
+2.  Create some files in these directories.  They can be empty, or not, as     you choose.  Some files may already exist from previous labs.  The     easiest way to create an empty file is "touch filename".     Make sure you have (or create) at least the following files:
+
+    In your home directory (~your-account):                In class:                         friends                             foo                                    my_file
+
+touch  friends  my_file  class/foo
+
+3.  Copy friends to class.
+cp friends class
+
+4.  Copy my_file to baby2.
+cp my_file baby2
+
+5.  Copy both friends and my_file to underclass.
+cp friends my_file class/underclass
+
+6.  Go to underclass, and copy friends to baby2.
+cd class/underclass
+cp friends ~/baby2
+
+7.  Copy "my_file" (any of them) to the home directory of the "testhome"     account, with your account name as a new filename.
+cp my_file ~testhome/shrub
+
+-------------
+
+For the following 4 questions, you will look at the commands in /bin and /usr/bin (remember, a command *is* a file).
+
+For instance, ls /bin/x* /usr/bin/x*.
+
+8.  List all the files (commands) which begin with the letter "c".
+ls /bin/*c /usr/bin/c*
+
+9.  List all the commands where the second letter is "e".
+ls /bin/?e* /usr/bin/?e*
+
+10. List all the commands whose last letter is "e".
+ls /bin/*e /usr/bin/*e
+
+11. List all commands with two occurrences of the letter "s" in their names.
+ls /bin/*s*s* /usr/bin/*s*s*
+
+12. Try the "echo" command:  In the slides I posted for week 5 are 2 slides with some examples of the echo command.  Make sure you understand them (mostly, be clear on what the quotes do.)
+
+13. Looking at the password file (/etc/passwd), find out how many accounts were set up in Spring, 2017.  (Look in the 5th field of your account to see how.)
+grep -i 'fall 2017' /etc/passwd | wc
+
+--------------
+
+14. Take the executable file you made in the last lab (that put your name, account, date of .bash_profile, length of /etc/passwd, and permissions of "friends" into a file) and edit it. You should make sure it has a meaningful name, so that both you and I can recognize it in your home directory, perhaps something like "lab4scr" or "lab4.info". It doesn't matter, just so you can recognize it, and I can find it, in your home directory. You can use the vi (vim) editor (there is a tutorial in the textbook), or use "nano".
+
+     a. Add the line "#! /bin/bash" as the very first line
+
+     b. For the next line, type "# " and then your name and the date.
+
+     c. In front of each command line you already have, put a new line, starting with the character "#" (shift-3) (called "sharp" or "number" or "pound sign" or various other names, like hash), and after it write what the following command is doing. The "#" tells the bash shell that this is a comment line, and you can write anything there. If you need a second line, be sure to put another "#" at the front.
+
+     d. Save this file and exit the editor ("ZZ" or ":wq" if you are using vi; "^X" (hold down the control key while typing "x") and answer the questions if you are using nano.
+
+     e. Make the file readable and executable by everyone. This is a shell script, and you can run it like a regular command, except you need to tell the system where it is (that's why you use "./" in front).
+chmod a+rx lab4.info
+
+     f. Run the file by typing "./<yourfilename>" . This should create the new file you named inside the script.
+
+     g. Look at the new file your script created, and make sure it has in it what you wanted to put there.
+
+     h. Remember the name of the script - we will use it again in future labs. I'll call it "your info script" in those labs -- you need to remember its actual name.

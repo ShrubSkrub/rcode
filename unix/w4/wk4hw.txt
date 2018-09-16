@@ -1,0 +1,78 @@
+Do lab 4
+
+Do Week 4 Reflections and Observations, in the "General Questions" forum
+
+Answer the following questions (from the Chapter 6 exercises (The Linux Filesystem) from A Practical Guide to ...Linux", by Mark Sobell}:
+
+1. Is each of the following an absolute pathname, a relative pathname, or a simple filename?
+
+a. milk_co
+simple filename
+
+b. correspond/business/mild.co
+relative pathname
+
+c. /home/alex
+absolute pathname
+
+d. ~alex/literature/promo
+absolute pathname
+
+e. ..
+relative pathname
+
+f. letter.0610
+simple filename
+
+2. List the commands you can use to perform these operations:
+
+a. Make your home directory the working directory
+cd ~
+
+b. Identify the working directory
+pwd
+
+
+3. If your working directory is /home/alex with the subdirectory named literature, give three sets of commands that you can use to create a subdirectory named "classics" under "literature". Also give several sets of commands you can use to remove the "classics" directory and its contents.
+mkdir literature/classics
+mkdir /home/alex/literature/classics
+mkdir ~/literature/classics
+mkdir ./literature/classics
+
+rmdir literature/classics
+rm -r literature/classics
+
+4. You have read permissions for the file "/etc/passwd" on newton.csmcis.net (or your own UNIX or Linux system). Look at the fields of information in that file for the users on either our system or yours.
+
+a. Which character is used to separate fields in /etc/passwd?
+:
+
+b. How many fields are used to describe each user?
+7
+
+c. How many users are on your system?
+2
+
+d. How many different login shells are in use on your system? (Hint: Look at the last field.)
+7
+
+e. The second field of /etc/passwd stores user passwords in encoded form. If the password field contains an "x", your system uses shadow passwords and stores the encoded passwords elsewhere. Does your system use shadow passwords?
+yes
+
+
+5. If "~jenny/draft" and "~alex/letter" are links to the same file and the following sequence of events occurs, what will be the date in the opening of the letter.
+
+a. Alex gives the command "vim letter".
+
+b. Jenny gives the command "vim draft".
+
+c. Jenny changes the date in the opening of the letter to January 31, 2006, writes the file, and exits from vim.
+
+d. Alex changes the date in the opening of the letter to February 1, 2006, writes the file, and exits from vim.
+
+February 1, 2006
+
+6. Suppose that a user belongs to a group that has all permissions on a file named "jobs_list", but the user, as the owner of the file, has no permissions. Assume the user does have all permissions in the directory that contans the file. Describe which operations, if any, the user/owner can perform on "jobs_list". Which command can the user/owner give that will grant the user/owner all permissions on the file?
+They can copy, move, or delete it.
+
+chmod u+rwx jobs_list
