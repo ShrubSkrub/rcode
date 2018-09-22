@@ -1,0 +1,62 @@
+LAB 5: Some UNIX/Linux commands
+
+This lab is to try out various UNIX/LINUX commands.    You can use the "cman"d or "info" command to learn about the command, or find information on the web.
+
+1. grep
+
+        a) Find your account in /etc/passwd
+grep seanduarte /etc/passwd
+
+        b) Now make sure you would find only your account, and not anyone who had a similar account name.
+grep "seanduarte" /etc/passwd
+
+        c) Find all accounts in /etc/passwd that don"9t use the bash shell (the "3v flag.)  Watch out "3 they might use the rbash shell!
+grep -v bash /etc/passwd | grep -v rbash
+
+        d) Find your account in /etc/passwd by looking for your full name (you"9ll have to quote the space.)
+grep "Duarte, Sean" /etc/passwd
+
+        e) Find both your account and my account (isaacs) at the same time (use egrep or grep "3E)
+egrep 'seanduarte|isaacs' /etc/passwd
+
+2. tr
+
+     tr is fairly simple to use, for straightforward translations.  The "3s flag is particularly useful to get rid of excess spaces (before a cut command, for instance.)
+
+     (NOTE:  The 'tr' command requires stdin, it will not accept a file name for input!)
+
+        a) Take any text file (/etc/passwd, for instance), and translate all upper case to lower case.
+tr '[A-Z]' '[a-z]' < /etc/passwd
+
+        b) Make the output of "cls  -l"d  into a colon ("8:"9) separated list, like /etc/passwd.
+ls -l | tr -s " " | tr ' ' ':'
+
+        c) Simple encryption:  "crotate 13"d some text.  That means shift all letters in the text to other letters 13 steps away in the alphabet: a -> n, b->o, etc.  Don"9t forget upper case as well as lower.
+echo "some text" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+3. cut
+
+      For the following, see if you can isolate just the fields mentioned "3 that is, cut those fields out of the lines.  More about fields in the "Glossary or UNIX/Linux Terms" in WebAccess.
+
+        a) Look at the names in the fifth field in /etc/passwd.
+cut -d ':' -f 5 /etc/passwd
+
+        b) Get the size field of the  ls  -l  command.  (You"9ll need tr  to get rid of extra spaces).
+ls -l | tr -s " " | cut -d ' ' -f 5
+
+        c) Find the date and time everyone logged into your system.  (You"9ll need  who and then  tr  to get rid of the extra spaces.)
+who | tr -s " " | cut -d ' ' -f 4
+
+4. One exercise for the script you wrote in Lab 4. In that script, you used redirect to write several lines into an information file. Edit that script, and near the top (after comments about what's in the script) add the line:
+
+           filename=<yournamegoeshere>
+
+(Be sure there are no spaces around the equal sign! So you could put "filename=mylab5file.info.mary".)
+
+This will define a variable called "filename", containing the name of the file you will create.
+
+To USE that variable, you precede its name with a dollar sign: $filename.
+
+Now, everyplace else in your script where you create or write that file, substitute $filename for the name you gave it.
+
+This means whenever you want to change the name of that file, you only have to change the single line where you set $filename.
