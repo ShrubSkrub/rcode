@@ -1,0 +1,46 @@
+ 1. sed
+        a) Change the word “home” into the word “apartment” in the /etc/password file, putting the result in a file in your home directory.
+sed 's/home/apartment/g' /etc/passwd > ~/homeToApartment
+
+        b) Delete lines 10 through 20 from the /etc/passwd file (just to your screen – don’t try to save it.)
+sed '10,20d' /etc/passwd
+
+        c) Delete all the lines in /etc/passwd that use the “bash” shell.  (This should produce exactly the same results as in the grep example 1c in lab5.)
+sed '/\/bash/d' /etc/passwd
+
+        d) Change “/bin/bash” to “/usr/bin/bash” in /etc/passwd (don’t save it.)  Note that you’ll need to use a different character than “/” in the “s” command for sed.
+sed 's?/bin/bash?/usr/bin/bash?g' /etc/passwd
+
+        e) Change the ‘:” field separator to a single space, in /etc/password (don’t forget ‘g’).
+sed 's/:/ /g' /etc/passwd
+
+        f) Try to insert two TAB characters as field separators in /etc/password.  In order to get the TAB characters into the command line, you’ll have to preceed each one with a “^V” (Ctrl-V) (because of the bash shell.) [NOTE: the TAB character is on the left side of your keyboard, just above the Caps Lock key.  It’s normal use is to space out columns of data, usually adding enough spaces to bring the character after the tab to a column number divisable by 8.  But bash used it for command completion.]  [NEW NOTE: In the current version of Ubuntu Linux, you can use "\t" for the tab character in sed.  This won't work in older versions.  You always could use "\t" for TAB in the "tr" command.]
+sed 's/:/\t\t/g' /etc/passwd
+
+    2. sort 
+(See lab handouts for some discussion of fields).  Note that some older examples use +0 to sort on the first field, +1 on the second, and so forth.  Modern (Posix-compliant) sorts, including ours with Linux, use –k1 (or –k 1) for the first field, -k 2  for the second, etc.  This is a better method to get used to, though both will work.
+        a) Use cut to get the fifth field of /etc/password (the full name), and sort that field on the second name.
+cut -d: -f5 /etc/passwd | sort -k2
+
+        b) Sort the output of “ls  -l”  by size (note you need -n and –k.)
+ls -l | sort -nk5
+
+        c) Same as b), but in reverse order (largest file first).
+ls -l | sort -nrk5
+
+    3. uniq  – and other commands
+        a) (This is a repeat from a previous lab.)  Use uniq with the “-c” flag to find how many accounts are using each shell on newton (or your own computer).
+cut -d: -f7 /etc/passwd | sort | uniq -c
+
+        b) The sixth field in /etc/password is the home directory of each account; cut out that field, but just for the student accounts (they all have “students” in the home directory name; use "grep" after the cut), and then cut again to get the fourth element of it (the one after /students/), then sort on that fourth element, and use uniq to find out how many of each directory there are.  Note you have to use “cut" twice, with two different delimiters (“:” and “/”), and then sort and uniq –c.  Also note that in counting fields in the path name of the home directory, the first field is null, before the first “/”.
+grep students /etc/passwd | cut -f6 -d: | cut -f4 -d/ | sort | uniq -c
+
+4. Again, using the same script you wrote in Lab 4 and changed in Lab 5: change the line you just added in Lab  5 to read:
+
+             filename=$1
+
+    and now, when you run the script, type a filename right after it.  So, if you want to call your info file (that the script will create) MyInfoFile, and if your script file name is "information", you would just type:
+
+            ./information MyInfoFile
+
+and it will create the file with your information in it.  Check to make sure it does this!
